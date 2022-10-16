@@ -77,7 +77,7 @@ In plain English, Python is referring to `hello` as a `name` because, without
 the quotation marks, it looks like the name of a variable and we're being told
 that there is nothing with that name.
 
-> Try it out: if we do the same thing, but say goodbye instead, what changes?
+Try it out: if we do the same thing, but say goodbye instead, what changes?
 
 ## Another Error
 

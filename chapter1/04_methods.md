@@ -212,8 +212,8 @@ lucky, a clear example of the method in action –
 [`strip`](https://docs.python.org/3/library/stdtypes.html#str.strip) is a good
 example of that.
 
-> In section one you found a list of some other Python data types. Find the
-> Python docs page for one of those now.
+In section one you found a list of some other Python data types. Find the
+Python docs page for one of those now.
 
 ## Reflect and Review
 
