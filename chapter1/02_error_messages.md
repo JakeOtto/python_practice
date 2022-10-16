@@ -43,7 +43,7 @@ We're going to ignore that line for now — it will make more sense later when w
 write Python code in files.
 
 <details>
-  <summary>But I really do want to know now — I can handle it!</summary>
+  <summary>:speech_balloon: But I really do want to know now — I can handle it!</summary>
 
   <hr>
   
