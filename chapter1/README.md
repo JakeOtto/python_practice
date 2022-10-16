@@ -3,7 +3,7 @@
 ## Learning Objectives
 
 In this chapter, you'll work towards seven of the module's ten learning
-objectives.
+objectives:
 
 1. Execute Python code in two different ways
 2. Make a plan using problem decomposition and experimentation
