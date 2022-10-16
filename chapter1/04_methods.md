@@ -151,6 +151,8 @@ have noted down all of the answers, run them in IRB to find out.
 
 <details>
   <summary>:speech_balloon: I don't understand why Python works that way (Click here for an explanation)</summary>
+
+  <hr>
   
   **Example 1:** `len("hello")` returns `5` — an integer representing the number of characters in `"hello"`.
 
@@ -161,6 +163,8 @@ have noted down all of the answers, run them in IRB to find out.
   **Example 4:** `len("hello").upper()` throws an error because `len("hello")` returns 5 on which we then call `upper`, a method that can only be called on strings.</div>
   
   **Example 5:** `str(len(" hello ")).strip()` returns `7` because we call the function `len` on `" hello "` making `7`. We then convert this to a string using `str` and finally call `strip` on that string (which doesn't change the string `'7'` because it has no spaces on the beginning or end).
+
+  <hr>
 </details>
 
 ### Exercises 2
@@ -201,7 +205,7 @@ methods](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
 
 Python strings actually belong to a family of data types called `sequences`.
 This means that for some string features you'll need to look at the [sequence
-docs](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range)
+docs](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range).
 
 In each case, there's an explanation of what the method does and, if you're
 lucky, a clear example of the method in action –
