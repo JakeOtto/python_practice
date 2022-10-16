@@ -5,16 +5,16 @@ to being able to build the first challenge of this module, a password validator.
 
 ## Video
 
-Here's the [video](/** @TODO */) for this section.
+Here's the [video](/** @TODO **/) for this section.
 
 ## Learning Objectives
 
-In this section, you will learn:
+In this section, you'll learn to:
 
-- What _functions_ are
-- What arguments are
-- Why functions are useful
-- Where to learn about Python's built in functions
+* Explain what a function is
+* Explain what a functions's arguments are
+* Explain why functions are useful
+* Find more information about Python's built in functions
 
 ## Part One: What are Functions?
 
@@ -22,37 +22,52 @@ Functions are like little machines that take inputs, called arguments, and
 provide outputs, called return values.
 
 Here are some analogies:
-- A toaster, which takes bread as an input and returns toast.
-- A blender, which takes fruit as an input and returns a smoothie.
-- A printer, which takes paper and some text data as inputs and returns a
+* A toaster, which takes bread as an input and returns toast.
+* A blender, which takes fruit as an input and returns a smoothie.
+* A printer, which takes paper and some text data as inputs and returns a
   document, with the text data printed on it.
 
-It's possible to create your own functions and you'll learn how to do that later
-on in this chapter. Python, however, comes with some built in functions for
-things that lots of people are likely to find useful. We'll start by learning
-how to use some of those functions.
+We are going to start using some functions that are built in to Python. In a
+later step you will create your own functions.
 
-To use a function you type out it's name, followed by parentheses and you put
-any arguments (inputs) inside the parentheses.
+Here is the generic syntax for using ('calling') a function:
 
 ```python
-functionName(argument)
+functionName(argument1, argument2, ...)
 ```
 
-Here's an example where I use the `len` function to get the length of a string.
+In this case, you type out:
+
+* The name of the function (`functionName`), then
+* An opening parenthesis (`(`), then 
+* A list of arguments (data to go into the function) separated by commas, then
+* A closing parenthesis (`)`).
+
+`len` is a function built in to Python that returns the length of a string you
+give it as an argument. Here's how you use it:
 
 ```python
 >>> len("This is a very very long string. How long, you ask? Let's find out!")
 67
 ```
 
-Note that if you don't add the parentheses, you just get the function returned
-back to you.
+<details>
+  <summary>:speech_balloon: I hate parentheses, what if I don't use them?</summary>
 
-```python
->>> len
-<built-in function len>
-```
+  <hr>
+  
+  If you don't add the parentheses, you just get the function returned back to
+  you.
+
+  ```python
+  >>> len
+  <built-in function len>
+  ```
+
+  Not very useful, for now...
+
+  <hr>
+</details>
 
 The return value of `len`, an _integer_, which is a data type used to represent
 whole numbers (not decimals). If you wanted to convert an integer intro a
@@ -70,13 +85,17 @@ And if you wanted to convert it back to an integer you can do this.
 67
 ```
 
-You can also assign return values to variables.
+You can also assign the return value of a function to a variable.
 
 ```python
 >>> word = 'hippopotamus'
->>> wordLength = len(word)
->>> wordLengthAsString = str(wordLength)
->>> wordLengthAsString
+>>> word
+'hippopotamus'
+>>> word_length = len(word)
+>>> word_length
+12
+>>> word_length_as_string = str(word_length)
+>>> word_length_as_string
 '12'
 ```
 
@@ -86,18 +105,20 @@ Try the following functions in your Python REPL. The goal is to build some
 muscle memory for executing functions. You don't need to memorise what each one
 does.
 
-- `type`, which takes anything as an argument and returns its _data type_. Try
-  it with a string and then an integer.
-- `print`, which takes anything as an argument and prints it to the terminal.
+* `type`, which takes anything as an argument and returns its _data type_. Try
+  it with a string and then a number.
+* `print`, which takes anything as an argument and prints it to the terminal.
   Try it with a string and then an integer. It'll seem useless at the moment but
   will soon become your best friend.
-- `abs`, which takes a number as an argument and always returns a positive
+* `abs`, which takes a number as an argument and always returns a positive
   value. Try it with both positive and negative numbers.
 
-The full list of Python's built in functions is
-[here](https://www.w3schools.com/python/python_ref_functions.asp), but many of
-them rely on concepts we've not yet covered so bookmark it for later but don't
-spend a lot of time trying to use them right now.
+[Here is a list of Python's built-in
+functions](https://docs.python.org/3/library/functions.html). Many of them rely
+on concepts we've not covered yet, and some of them are so specialist that won't
+cover them at all. 
+
+Try out a few now for fun and then bookmark the list for reference.
 
 ## Reflect and Review
 
@@ -107,11 +128,11 @@ In this section, you learned about functions and arguments.
 
 In a few sentences, explain:
 
-- What functions are
-- What arguments are
-- How to use a function
-- Why functions are useful
-- Where to learn about Python's built in functions
+* What functions are
+* What arguments are
+* How to use a function
+* Why functions are useful
+* Where to learn about Python's built in functions
 
 
 [Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=03_functions.md&repository=makersacademy%2Fpython_foundations&redirect=chapter1%2F04_methods.md)
