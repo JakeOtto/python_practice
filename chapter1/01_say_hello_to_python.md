@@ -121,7 +121,6 @@ created and then `return`ed. Let's try to do something with our `string`s.
     'hello, world!'
   </code>
 </details>
-<br>
 
 Now we're getting somewhere! The `string`s have been joined or, to use the
 technical term, **concatenated** and a new `string` was returned. This is one
