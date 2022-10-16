@@ -1,5 +1,8 @@
 # Python Foundations
 
+_Coaching this? Read the coach guidance
+[here.](https://github.com/makersacademy/slug/blob/main/materials/universe/foundations/python/DESIGN.x.md)_
+
 ## Learning objectives
 
 In this section, you will learn the fundamentals of Python and how to write
