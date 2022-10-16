@@ -1,21 +1,27 @@
 # Beyond Strings
 
-In the first three sections of this chapter we've played with some strings and you've seen that there are a whole load of methods which can be called upon any string, such as...
+In the first three sections of this chapter we've played with some strings and
+you've seen that there are a whole load of methods which can be called upon any
+string, such as...
 
 ```python
 >>> 'hello'.upper()
 'HELLO'
 ```
 
-But what if you want to do maths or something else that cannot be done with strings? Well, in addition to strings, there are a bunch of other data types and each one has it's own selection of methods.  Some examples of those datatypes are:
+But what if you want to do maths or something else that cannot be done with
+strings? Well, in addition to strings, there are a bunch of other data types and
+each one has it's own selection of methods.  Some examples of those datatypes
+are:
 
-- integers
-- floats
-- Booleans
-- lists
-- dictionaries
+* integers
+* floats
+* Booleans
+* lists
+* dictionaries
 
-Lists and Dictionaries are complex data types that are introduced in the next chapter. The rest are explained below.
+Lists and Dictionaries are complex data types that are introduced in the next
+chapter. The rest are explained below.
 
 ## Video
 
@@ -23,29 +29,30 @@ Here's the [video](<!-- OMITTED -->) for this section.
 
 ## Learning Objectives
 
-In this section, you will learn
-- What floats are and how they are used
-- What integers are and how they are used
-- What Booleans are and how they are used
+In this section, you will learn to:
+
+* Explain what floats, integers, and booleans are.
+* Use floats, integers, and booleans for straightforward tasks.
 
 ## Integers
 
-Integers are whole numbers (not decimals) and they can be used in all the ways that you might expect...
+Integers are whole numbers (not decimals) and they can be used in all the ways
+that you might expect...
 
 ```python
 >>> 1 + 1
 2
->>> 10 / 2
-5.0
 >>> 3 * 3
 9
 >>> 5 - 1
 4
 ```
 
-You can find more methods in the [Python docs](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex).
+You can find more methods in the [Python
+docs](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex).
 
-Note that when you divide an integer by another integer, the return value won't be an integer.  For example...
+Note that when you divide an integer by another integer, the return value won't
+be an integer.  For example...
 
 ```python
 >>> 10 / 3
@@ -60,37 +67,68 @@ Note that when you divide an integer by another integer, the return value won't 
 1.25
 ```
 
-The results here are all what we call a float - read on to find out about those!
+The results here are all what we call a float.
 
 ## Floats
 
-Floats are decimal values. They're called floats because the decimal point can 'float' to any position.  I.e. You might need a number like `11.11` with the decimal point right in the middle or you might need a number like `100000000.1` where the decimal point is all the way to the right hand side... and so on.
+Floats are decimal values. Float is short for 'floating point', which refers to
+the `.` in a number like `100.4`. This point can appear anywhere in the number,
+hence why it is 'floating'.
 
-As with integers, you can do all the basic mathematical stuff with floats - try that now.
+<details>
+  <summary>:speech_balloon: Still seems like a weird name.</summary>
 
-Floats also have their own methods, which you can find in the [Python docs](https://docs.python.org/3/library/stdtypes.html#additional-methods-on-float).
+  <hr>
+  
+  It's called 'floating point' to distinguish it from the less common 'fixed
+  point' system. This is another way computers can store numbers.
+  
+  In a fixed-point number, the number of digits that come before the dot and
+  after the dot are fixed. If your number system is fixed point and has four
+  digits before the point and two after, you could store the number `1337.42` or
+  `0001.20`. But you couldn't store `2.453`.
+
+  This might seem inconvenient, and you'd be right. But it's useful for some
+  situations, like currency, where fixed point can be more reliably precise. [If
+  you'd like to read more about this you can start
+  here.](https://husobee.github.io/money/float/2016/09/23/never-use-floats-for-currency.html)
+
+  <hr>
+</details>
+
+As with integers, you can do all the basic mathematical stuff with floats — try
+that now.
+
+Floats also have their own methods, which you can find in the [Python
+docs](https://docs.python.org/3/library/stdtypes.html#additional-methods-on-float).
 
 ### Challenge
 
-What happens if you mix and match integers and floats? What type of number do you get back? How can you tell?
+What happens if you mix and match integers and floats? What type of number do
+you get back? How can you tell?
 
 ## Booleans
 
-Booleans are a special data type named after George Boole and there are only two different values of a Boolean: `True` and `False`.
+Booleans are a special data type named after George Boole and there are only two
+different values of a Boolean: `True` and `False`.
 
-Python methods that return Booleans typically start with "is". For example `2.0.is_integer()` and `"this is not empty".isspace()`.
+Python methods that return Booleans typically start with "is". For example
+`(2.5).is_integer()` and `"this is not empty".isspace()`.
 
-Booleans are simple, but they can be combined in complex ways using logical operators.  Here are some simple examples using the logical operators `and`, `or` and `not`.
+Booleans are simple, but they can be combined in complex ways using logical
+operators. Here are some simple examples using the logical operators `and`, `or`
+and `not`.
 
 ```python
->>> # to return true, both sides must be true
+>>> # With `and`: to return true, both sides must be true
 >>> True and True
 True
 >>> True and False
 False
 >>> False and True
 False
->>> # to return true, only one side needs to be true
+
+>>> # With `or`: to return true, only one side needs to be true
 >>> True or False
 True
 >>> False or True
@@ -99,18 +137,21 @@ True
 True
 >>> False or False
 False
->>> # returns the opposite of what's given
+
+>>> # With `not`: returns the opposite of what's given
 >>> not True
 False
 >>> not False
 True
 ```
 
-Yes, these are slightly useless examples contrived to show you how booleans and two logical operators work. In reality, you won't write code like that. Below you'll find a more realistic example, where the program is checking if a password is between 8 and 12 characters
+To illustrate how this works in a realistic example, consider this next code
+that checks whether a password is between eight and twelve characters long.
 
 ```python
->>> 7 < len(password) and not password.isalpha()
-# would return true or false
+>>> password = "..." # Try different values in here
+>>> len(password) > 7 and len(password) < 13
+# This will return True or False
 ```
 ## Reflect and Review
 

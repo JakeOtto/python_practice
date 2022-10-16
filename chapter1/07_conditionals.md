@@ -1,8 +1,12 @@
 # Conditionals
 
-Sometimes, in real life, we might want to act only when certain conditions are met. For example, you might decide that you're only going for a picnic if it's not raining or that you'll only try to make a cake if you have all the ingredients.
+Sometimes, in real life, we might want to act only when certain conditions are
+met. For example, you might decide that you're only going for a picnic if it's
+not raining or that you'll only try to make a cake if you have all the
+ingredients.
 
-<img alt="Flowchart representing the above decisions" src="../images/ifs_flowchart.svg" width="500">
+<img alt="Flowchart representing the above decisions"
+src="../images/ifs_flowchart.svg" width="500">
 
 <!-- OMITTED -->  
 
@@ -10,165 +14,326 @@ In programming, as in life, we need the ability to make decisions based on data.
 
 ## Video
 
-Here's the (<!-- OMITTED -->)[video](https://youtu.be/jCcQ4F-nIYc) for this section.
+Here's the [video](<!-- OMITTED -->) for this section.
 
 ## Learning Objectives
 
-In this section, you'll learn
+In this section, you'll learn to:
 
-- How to let your program make decisions, using _if statements_
+* Control what code executes using _if statements_.
 
-## Part One: If / Else
+## Part One: `if` and `else`
 
-A really common way to implement this in python is to use an `if` statement.  Here's an if statement is to decide which of two Strings is returned.
+A common way to implement _conditional logic_ in Python is to use an `if`
+statement. Take a look at the following example.
 
 ```python
 >>> name = "Pedro Luis Gonçalo da Costa"
->>> if(len(name) > 25):
->>> 	return "that's a very long name"
->>> else:
->>>   	return "that's not a very long name"
+>>> if len(name) > 25:
+...     print("That is a very long name")
+...     print("Thanks!")
+...
+That is a very long name
+Thanks!
 ```
 
-_This might seem like a silly example, because we could just count the letters in `name`. But imagine that you don't know what value `name` holds – maybe it came from a user and maybe it will be different for every user.
+In this code, Python will execute the code `len(name) > 25` which represents a
+condition. Let's execute some parts of this to see what it does:
 
-Ponder this example, and give it a go if you like:
-
-``` python
->>> name = input("What is your name?: ") 
->>> if len(name) > 7:
->>>		print(f"{name.capitalize()} is a long name!")
->>>	else:
->>>		print(f"{name.capitalize} is a short name!")  
+```python
+>>> name = "Pedro Luis Gonçalo da Costa"
+>>> len(name)
+27
+>>> len(name) > 25
+True
 ```
 
-Let's break down the `if` statement. On the first line (after assigning `name`) we have `if(len(name) > 25):`. The part in brackets will _resolve_ to (return) either `true` or `false`. If it resolves to `true`, the code on the third line `"that's a long name"` is executed (and the remaining code is skipped). If `name.length > 25` resolves to `false`, the next line is skipped. Then we have a _catch all_ (else) clause. It covers all situations where `name.length > 25` resolves to false.
+Let's return to the original code and look at the `if`:
+
+```python
+>>> name = "Pedro Luis Gonçalo da Costa"
+>>> if len(name) > 25:
+...     print("That is a very long name")
+...     print("Thanks!")
+...
+That is a very long name
+Thanks!
+```
+
+Following the `if`, the condition, and the `:` are two lines of code that have
+four spaces at the start. This is called _indentation_ and Python uses it to
+define a chunk of code. This chunk of code will execute if and only if the
+condition evaluates to `True` — in the case where the string `name` is more than
+25 characters long.
+
+<details>
+  <summary>:speech_balloon: What about those `...` dots?</summary>
+
+  <hr>
+  
+  You don't need to type those, they are just what the REPL will show you
+  if you start an `if` block to indicate that it isn't complete yet.
+
+  <hr>
+</details>
+
+<details>
+  <summary>:speech_balloon: When I type that in it does nothing.</summary>
+
+  <hr>
+  
+  Are you looking at something like this:
+
+  ```python
+  >>> name = "Pedro Luis Gonçalo da Costa"
+  >>> if len(name) > 25:
+  ...     print("That is a very long name")
+  ...     print("Thanks!")
+  ...
+  ```
+
+  If so, hit enter. Python needs you to do this so that it knows the `if` block
+  is over, which you do by having a line without any indentation at the start.
+
+  <hr>
+</details>
+
+<details>
+  <summary>:speech_balloon: But what on earth is that <code>&gt;</code> symbol?</summary>
+
+  <hr>
+  
+  The `>` symbol returns `True` if the value on the left is _greater than_ the
+  value on the right. Otherwise it returns `False`.
+
+  By contrast, the `<` symbol returns `True` if the value on the left is _less
+  than_ the value on the right. Otherwise it returns `False`.
+
+  I like to remember this by thinking of the symbol as a crocodile's jaws. The
+  crocodile is hungry, and so always eats the biggest number.
+
+  There are two further useful symbols `>=` and `<=`, which mean _greater than
+  or equal to_ and _less than or equal to_ respectively.
+
+  <hr>
+</details>
+
+At the moment this seems a bit pointless since the name is hard-coded. Let's try
+it with another name:
+
+```python
+>>> name = "Eric Cantona"
+>>> if len(name) > 25:
+...     print("That is a very long name")
+...     print("Thanks!")
+...
+```
+
+Well, that prints nothing. The condition evaluates to `False` because `"Eric
+Cantona"` is only twelve characters long.
+
+If we wanted to print a message in the other case, we could do this:
+
+```python
+>>> name = "Eric Cantona"
+>>> if len(name) > 25:
+...     print("That is a very long name")
+...     print("Thanks!")
+...
+... if len(name) <= 25:
+...     print("That is not a very long name")
+...
+That is not a very long name
+```
+
+<details>
+  <summary>:speech_balloon: I got a syntax error there.</summary>
+
+  <hr>
+  
+  You'll need to make sure you leave a blank line after the `print("Thanks!")`
+  line and before the `if len(name) <= 25` line. 
+  
+  This is so Python knows that the last `if` block has fully ended.
+
+  <hr>
+</details>
+
+But that does seem like a lot of work. Instead, we can use `else`.
+
+```python
+>>> name = "Eric Cantona"
+>>> if len(name) > 25:
+...     print("That is a very long name")
+...     print("Thanks!")
+... else:
+...     print("That is not a very long name")
+...
+That is not a very long name
+```
+
+When Python sees `else:` at the end of an `if` block, it knows to execute the
+following block in the case that the condition evaluates to `False`. You can
+think of it as "if XYZ then do this, _otherwise_ do that".
 
 ### Whitespace
 
-Note that after every `if`, and every `else` we must terminate the line with a colon `:`, this in turn is followed by a new line that is tabbed in, like so:
+As you have seen, after every `if ...` and `else` we end the line with a colon.
+This signals to Python that a new block is going to begin. 
+
+After this, we have to indent every line we want to be a part of that block with
+four spaces.
 
 ```python
->>> if (some_condition == true):
-... 	# this code executes
+>>> if len("hello") > 2:
+...    # this code executes
 ... else:
-... 	# this code executes
+...    # this code does not execute
 ```
 
-This is because python is "Whitespace Dependant". This means that the indentations underneath blocks of code matter. Python will interpret the gap left at the start of the line to mean that the code on that line will execute only if the above line runs.
+This is because Python is _whitespace dependant_. This means that indentation
+matters. Python will interpret the gap left at the start of the line to mean
+that the code on that line will execute only if the condition is `True`.
 
-This can get a little confusing at the beginning, so there are some helpful extensions in VSCode to aid us, such as [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) which colourises the columns of our code.
+<details>
+  <summary>:speech_balloon: Do all programming languages do this?</summary>
 
-Just remember, as a rule of thumb, if a line of python ends with a colon `:` then the next line will be indented.
+  <hr>
+  
+  No. In fact, Python is the only common language that does this. Other
+  languages use symbols like braces (`{` and `}`) or keywords like `do` and
+  `end`.
 
-Sort this code out:
+  Python made this choice because in all modern programming engineers use
+  indentation to signify to the reader the structure of their code. Even where
+  other keywords are used by the language, programmers will still use
+  indentation because it is easier for humans to read it.
+
+  But Guido van Rossum got tired of teaching novice programmers to use
+  indentation. It took a lot of nagging, because his novices were only really
+  worried about making things work and were still picking up what professional
+  quality work meant in programming.
+
+  So, he and his colleagues reasoned, if we make it an essential part of making
+  programs work, we will no longer have to nag our students so much. We at
+  Makers leave their decision to your judgement!
+
+  <hr>
+</details>
+
+Just remember, as a rule of thumb, if a line of python ends with a colon `:`
+then the next line will be indented.
+
+### Equal and Not Equal
+
+To check whether two values are equal, we can use the `==` operator. This
+compares the item on the left with the item on the right and returns `True` if 
+they are equal.
+
+``` python
+>>> name = "Will"
+>>> if name == "Will":
+...     print("Hi Will!")
+...
+Hi Will!
+```
+
+We can also do the opposite with the `!=` operator:
+
+``` python
+>>> name = "June"
+>>> if name != "Will":
+...     print("Wait, who are you!")
+...
+Wait, who are you!
+```
+
+## Exercise
+
+The following code is broken. Fix it up and get it running.
 
 ``` python
 >>> name = "Ahmed"
 
 if name == "Ahmed":
 print("Hi, Ahmed")
-	elif name == "Brunhilde"
-		print(Hi Brunhilde)
-			else:
-			print("What is your name?")
+else:
+    print("Oh, a new friend!")
 ```
 
-Press `tab` on your keyboard to quickly indent a line, and `shift + tab` to de-indent a line (move back)!
+## Part Two: `elif`
 
-<!-- OMITTED -->
-
-Open up your python REPL (`python3` - mac, `py` - windows) and try the following. Each line should resolve to either `true` or `false`.
+In many situations there will be more than one thing that we wish to check,
+which means we need some more _branches_ on our `if` statement. These can be
+added using `elif`.
 
 ```python
->>> len("hello") > 2
-```
-
-```python
->>> len("hello") > 10
-```
-
-```python
->>> "hello".count("l") > 1
-```
-
-```python
->>> "hello".count("o") > 2
-```
-
-Next try adding some conditions with a colon at the end.
-
-``` python
->>> greeting = "Hello World"
->>> if "World" in greeting:
->>>		print(greeting)
-```
-
-``` python
->>> pi = 3.141
->>> if pi > 1:
->>>		print("Pi is greater than 1!")
-```
-
-## Part Two: Elif
-
-In many situations there will be more than one thing that we wish to check, which means we need some more _branches_ on our `if` statement. These can be added using `elif`.
-
-```python
->>> name = "Edward Smith"
->>> if(name.length > 25):
->>>   	return "That's a very long name"
->>> elif(name.length > 20):
->>>   	return "That's a long name"
+>>> name = "Edward Jeremiah Smith"
+>>> if len(name) > 25:
+>>>     print("That is a very long name")
+>>> elif len(name) > 20:
+>>>     print("That is a long name")
 >>> else:
->>>   	return "That's not a particularly long name"
+>>>     print("That is not a particularly long name")
 ```
 
-Now open up your python REPL and try playing with some `if` statements. Try adding more and more branches. See what happens if you leave off the `else`. What happens when you *nest* your `if` blocks?! 
+Now open up your Python REPL and try playing with some `if` statements. Try
+adding more and more branches. See what happens if you leave off the `else`.
+What happens when you put one `if` inside another `if` block!
 
 Try changing `num` around to see what you get.
 
 ``` python
 >>> num = 64
 >>> if num > 50:
->>>		if num % 2 == 0:
->>>			print(f"This number, {num}, is even and larger than 50!")
->>> 	elif num % 3 == 0:
->>>			print(f"This number, {num}, is divisible by 3 and larger than 50!")
->>>		else:
->>>			print(f"This number {num} is odd, and not divisible by 3!")
->>>	else:
->>> 	print(f"This number, {num}, is too small!")
+>>>     if num % 2 == 0:
+>>>         print(f"This number, {num}, is even and larger than 50!")
+>>>     elif num % 3 == 0:
+>>>         print(f"This number, {num}, is divisible by 3 and larger than 50!")
+>>>     else:
+>>>         print(f"This number {num} is odd, and not divisible by 3!")
+>>> else:
+>>>     print(f"This number, {num}, is too small!")
 ```
 
-### Not Equal
+<details>
+  <summary>:speech_balloon: What does that <code>%</code> symbol mean?</summary>
 
-In Python, as in many programming languages =, sometimes we want to check if something **does not** evaluate to something else.
+  <hr>
+  
+  This is the _modulo operator_ and means "divide the number on the left by the
+  number on the right _and give me the remainder_".
 
-A quick way to do this is with the `!=` operator, sometimes called the not operator or bang operator.
+  For example:
 
-``` python
->>> name = "June"
->>> if name != "Will":
-...		print("You aren't Will! Who are you?")
-...	else:
-...		print("You must be Will!")
-```
+  ```python
+  >>> 5 % 2
+  1 # Five divided by two is 2 with remainder 1
+  >>> 9 % 3
+  0 # Nine divided by three is 3 with no remainder, so zero
+  ```
 
-A quick and easy way of reversing the condition.
+  We can check whether a number is even, therefore, with the condition `num % 2
+  == 0`. Does this number divide by 2 exactly? In which case it is even. If
+  there is a remainder it is odd.
+
+  <hr>
+</details>
 
 ## Reflect and Review
 
-In this section we covered `if` statements and how they can be used in a program to make decisions.
-
-> At this point, you might be getting sick of having to write out every line of code, every time. You'll see how to avoid that in the next section.
+In this section we covered `if` statements and how they can be used in a program
+to make decisions.
 
 **Please pause at this point to reflect and review your learning...**
 
 In a few sentences, explain:
-- What is meant by conditional
-- How the `if` and `elif` branches of an if statement work
-- How the `else` branch of an if statement works
+
+* What is meant by conditional
+* How the `if` and `elif` branches of an if statement work
+* How the `else` branch of an if statement works
+* What each of these comparison operators do: `==`, `!=`, `>`, `>=`, `<`, `<=`,
+  `%`
 
 
 [Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=07_conditionals.md&repository=makersacademy%2Fpython_foundations&redirect=chapter1%2F08_control_flow.md)

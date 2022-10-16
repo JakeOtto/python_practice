@@ -1,3 +1,10 @@
+<!-- OMITTED -->
+
+This can get a little confusing at the beginning, so there are some helpful
+extensions in VSCode to aid us, such as
+[indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+which colourises the columns of our code.
+
 # Executing Python Files
 
 The best approach to building programs is to build iteratively. You start by writing something very small and very simple, then you tweak or add to it, executing the code after every small change so that you can get feedback, perhaps in the form of error messages, from your computer.  If you have to write your program in it's entirety every time, you're going to get annoyed very quickly and revert to some less than ideal practices. Plus, you'll soon want to build programs over days, months or years.
