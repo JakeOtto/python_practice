@@ -20,6 +20,8 @@ In this section, you'll learn to:
 * Create and concatenate (join together) strings
 * Explain the term _return value_
 * Assign and reassign variables
+* Create strings using interpolation
+* Exit the REPL back to the regular terminal
 
 ## Prerequisites
 
@@ -85,6 +87,7 @@ Python has a number of data types, for example `int` (e.g. `45`) or `boolean`
 (`True` or `False`).
 
 > Find a list of Python's other data types and make a note of them somewhere
+
 ### Return Values
 
 A return value is the result of executing some code. Not much happened in that
@@ -165,6 +168,72 @@ Variables can be _reassigned_ to contain different values, such as a different
 >>> greeting = "hello again, " + "world!"
 >>> greeting
 'hello again, world!'
+```
+
+### String Interpolation
+
+<!-- OMITTED -->
+
+It's also possible to build strings using _interpolation_. This technique allows
+you to insert content into strings. Here's an example where the contents of a
+variable called `name` is interpolated into a string:
+
+```python
+>>> name = 'Mina'
+>>> f"Hello {name}, how are you today?"
+'Hello Mina, how are you today?'
+```
+
+Note that:
+
+* The string has an `f` just before its opening quote. This tells Python that it
+  is an _f-string_ and it should look for interpolation symbols.
+* The variable name is wrapped in `{` and `}`. This tells Python to insert the
+  contents of this variable at this point in the string.
+
+<details>
+  <summary>:speech_balloon: I get an error here...</summary>
+
+  <hr>
+  
+  If you see an error like `SyntaxError: invalid syntax` you're likely using an
+  old version of Python.
+  
+  Try exiting out of the REPL by typing `exit()` and then running `python3`
+  instead.
+
+  If you're still having trouble, send a screenshot of your terminal to your
+  coach.
+
+  <hr>
+</details>
+
+Here are a couple more examples:
+
+```python
+# Working example:
+>>> date = '3000-01-01'
+>>> f"The date today is {date}"
+'The date today is 3000-01-01'
+
+# Broken example to show you what happens without the `f`
+>>> date = '3000-01-01'
+>>> "The date today is {date}"
+'The date today is {date}'
+```
+
+### Exiting the REPL
+
+The Python REPL is great but there will be times that you need to quit out of it
+to do something else. You can do this by typing `exit()` or hitting `ctrl+D`.
+
+```shell
+; python3
+Python 3.8.9 (default, Apr 13 2022, 08:48:06)
+[Clang 13.1.6 (clang-1316.0.21.2.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+; # Back to the normal terminal
 ```
 
 ### Time to Break Stuff
