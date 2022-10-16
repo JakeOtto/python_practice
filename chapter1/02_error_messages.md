@@ -44,6 +44,8 @@ write Python code in files.
 
 <details>
   <summary>But I really do want to know now — I can handle it!</summary>
+
+  <hr>
   
   OK — if you insist!
 
@@ -61,6 +63,8 @@ write Python code in files.
   to the overall 'main area' of the program.
 
   If that's not clear — it's OK. It's not important just yet.
+
+  <hr>
 </details>
 
 Let's instead look at the last line. This tells us what the error is:
