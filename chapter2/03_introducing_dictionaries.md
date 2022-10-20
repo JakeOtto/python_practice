@@ -144,7 +144,7 @@ does.
 * `setdefault(key, default)`
 
 You can find more [dictionary
-methods](https://docs.python.org/3/library/stdtypes.html#typesmapping
+methods](https://docs.python.org/3/library/stdtypes.html#typesmapping)
 in the Python Docs.
 
 ## Reflect and Review
