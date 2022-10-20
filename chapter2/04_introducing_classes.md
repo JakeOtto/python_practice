@@ -169,11 +169,11 @@ example.
 
 ```Python
 >>> class Person():
->>>  def __init__(self, name, birthday, favourite_language):
->>>     self.name = name
->>>     self.birthday = birthday
->>>     self.favourite_language = favourite_language
->>>
+...     def __init__(self, name, birthday, favourite_language):
+...         self.name = name
+...         self.birthday = birthday
+...         self.favourite_language = favourite_language
+...
 >>> person1 = Person("Alan Turing", "June 23, 1912", "Standard Description")
 ```
 
@@ -182,11 +182,11 @@ into the `__init__()` method, automatically! Now we can create lots of people,
 each with their own name, birthday and favourite language.
 
 ```Python
-> person1 = Person("Alan Turing", "June 23", "Standard Description")
-> person2 = Person("Ada Lovelace", "December 10", "n/a")
-> person3 = Person("Grace Hopper", "December 9", "COBOL")
-> person4 = Person("John von Neumann", "December 28", "C")
-> person5 = Person("Claude Shannon", "April 30", "C")
+>>> person1 = Person("Alan Turing", "June 23", "Standard Description")
+>>> person2 = Person("Ada Lovelace", "December 10", "n/a")
+>>> person3 = Person("Grace Hopper", "December 9", "COBOL")
+>>> person4 = Person("John von Neumann", "December 28", "C")
+>>> person5 = Person("Claude Shannon", "April 30", "C")
 ```
 
 This is why the `__init__()` method is often called the constructor method, as
@@ -198,7 +198,22 @@ information, such as a `name` from your `Person()` class. The solution is below.
 
 <details>
 <summary>Solution</summary>
-<img src="./images/class_name_get.png"></img>
+
+  ```python
+  >>> class Person():
+  ...     def __init__(self, name, birthday, favourite_language):
+  ...         self.name = name
+  ...         self.birthday = birthday
+  ...         self.favourite_language = favourite_language
+  ...
+  >>> person.name
+  'Alan Turing'
+  >>> person.birthday
+  'June 23, 1912'
+  >>> person.favourite_language
+  'Standard Description'
+  ```
+
 <p>
 
 There are methods you can write to retrieve this information. How might you go
