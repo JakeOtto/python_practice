@@ -25,6 +25,8 @@ to further test themselves.
 5. What is the difference between a class and an instance of a class?
 6. What is meant by scope?
 
+After this, jump on to [Chapter 3](../chapter3/README.md)
+
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
