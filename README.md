@@ -50,9 +50,7 @@ moving on. There are two types of challenge:
   We'll ask you to make a screen recording of yourself working on these
   challenges so that your coach can understand how you're doing.
 
-At the end of each file, we'll ask you to log your progress using a link to a
-form. This will only take a couple of seconds and will help your coach
-understand your progress.
+<!-- OMITTED -->
 
 ## Sequence
 

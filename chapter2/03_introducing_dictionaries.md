@@ -161,7 +161,7 @@ In a few sentences, explain, in writing or to a peer:
 * How to retrieve all the keys from a Dictionary
 
 
-[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=03_introducing_dictionaries.md&repository=makersacademy%2Fpython_foundations&redirect=chapter2%2F04_introducing_classes.md)
+[Next Challenge](04_introducing_classes.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 

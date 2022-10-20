@@ -141,7 +141,7 @@ In a few sentences, explain:
 * Where to learn about Python's built in functions
 
 
-[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=03_functions.md&repository=makersacademy%2Fpython_foundations&redirect=chapter1%2F04_methods.md)
+[Next Challenge](04_methods.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 

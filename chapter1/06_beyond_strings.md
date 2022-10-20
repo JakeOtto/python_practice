@@ -163,7 +163,7 @@ In a few sentences, explain:
 - What Booleans are plus how the `and`, `or` and `not` logical operators work
 
 
-[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=06_beyond_strings.md&repository=makersacademy%2Fpython_foundations&redirect=chapter1%2F07_conditionals.md)
+[Next Challenge](07_conditionals.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 

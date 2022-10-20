@@ -17,7 +17,7 @@ Well done for completing the first drills and programming challenge!
 - What one thing would you like to learn more about?
 
 
-[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=11_putting_chapter_1_into_practice.md&repository=makersacademy%2Fpython_foundations&redirect=chapter1%2F12_refactoring.md)
+[Next Challenge](12_refactoring.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 

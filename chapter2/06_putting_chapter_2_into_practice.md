@@ -17,7 +17,7 @@ Well done for completing the chapter 2 challenges!
 * What one thing would you like to learn more about?
 
 
-[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=06_putting_chapter_2_into_practice.md&repository=makersacademy%2Fpython_foundations&redirect=chapter2%2F07_chapter_2_review.md)
+[Next Challenge](07_chapter_2_review.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 

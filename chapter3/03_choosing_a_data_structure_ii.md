@@ -131,7 +131,7 @@ Write a few short notes, or chat with a peer, about...
 * Which option you've chosen and why
 
 
-[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=03_choosing_a_data_structure_ii.md&repository=makersacademy%2Fpython_foundations&redirect=chapter3%2F04_functions_as_arguments.md)
+[Next Challenge](04_functions_as_arguments.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
