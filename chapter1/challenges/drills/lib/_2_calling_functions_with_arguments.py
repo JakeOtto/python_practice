@@ -73,6 +73,7 @@ def remove_x(string):
 # Example:
 #   Call:    first_half("coding")
 #   Returns: "cod"
+# Note: you can assume the string will always have an even number of characters
 def first_half(string):
     # your code goes here (delete the pass below)
     pass
@@ -82,6 +83,7 @@ def first_half(string):
 # Example:
 #   Call:    second_half("coding")
 #   Returns: "ing"
+# Note: you can assume the string will always have an even number of characters
 def second_half(string):
     # your code goes here (delete the pass below)
     pass

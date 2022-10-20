@@ -19,8 +19,9 @@ You also know how to get a list of all the keys or all the values using `person.
 
 ## Learning Objectives
 
-In this section, you will learn about:
-- Dictionary methods which take comprehensions
+In this section, you will learn to:
+
+* Manipulate dictionaries using functions and comprehensions
 
 ## More Comprehension
 
@@ -100,15 +101,6 @@ Or in a different way, to make sure there are no overlaps in card suit, we can u
 {'Will': 'Diamonds', 'Bernie': 'Spades', 'Garth': 'Hearts', 'Suze': 'Clubs'}
 ```
 
-## Now Try These
-
-The syntax for all these methods is basically the same, but the return values will be different. Try them out now on a dictionary of your own design.
-
-- `select`
-- `all?`
-- `any?`
-- `filter`
-- `reject`
 
 ## Dictionary Methods & Advanced Iteration
 
@@ -193,9 +185,11 @@ In this section, we dug a bit deeper into Dictionaries.
 **Please pause at this point to reflect and review your learning...**
 
 Write some short notes, or talk to a peer, about:
-- What blocks are (again)
-- How blocks used with Dictionary methods are different to those used with Array methods
-- What is more "pythonic", advanced methods or simple loops?
+
+* What dictionaries are
+* How dictionaries can be manipulated
+* How this differs from list manipulation
+* What is more "pythonic", advanced methods or simple loops?
 
 
 [Next Challenge](07_putting_chapter_3_into_practice.md)

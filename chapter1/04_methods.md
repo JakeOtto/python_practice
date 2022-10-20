@@ -69,7 +69,12 @@ the rest, you'll use the Python docs (which you'll see very soon).
 
 ### Time to Play in the Python REPL
 
-Open up the Python REPL and try out each of these methods:
+Open up the Python REPL and try out each of the methods listed below.
+
+Note that one of them is an impostor — we've made it up! You'll get an
+error message, so be ready to work out what it's telling you. One of the others
+might appear to do nothing at first — try looking it up on a search engine to
+see what it does.
 
 * `capitalize`
 * `lower`
@@ -87,11 +92,6 @@ For example:
 ```
 
 As you try out each one, take a guess at what it does.
-
-Note that one of these methods is an impostor — we've made it up! You'll get an
-error message, so be ready to work out what it's telling you. One of the others
-might appear to do nothing at first — try looking it up on a search engine to
-see what it does.
 
 ## Part Three: Method Chaining
 
