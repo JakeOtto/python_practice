@@ -37,7 +37,7 @@ If you have trouble with this, contact your coach.
 
 ## Setting up the tests
 
-[Pytest](https://docs.pytest.org/en) is a tool used to run tests that ensure
+[Pytest](https://docs.pytest.org/) is a tool used to run tests that ensure
 your program does what it needs to do. In the near future you'll be writing your
 own tests but, for now, you'll use the tests that we wrote for you.
 
@@ -100,7 +100,7 @@ the wrong directory.
 4. Keep going until all the tests for that set of drills are passing
 5. Move on to the next set
 6. Keep going until all the tests for all the sets are passing
-7. :alert: [Zip up](../../pills/creating_zipfiles.md) your code so that you're
+7. :warning: [Zip up](../../pills/creating_zipfiles.md) your code so that you're
    ready to share it later <!-- OMITTED -->
 8. Move on to the programming challenge
 
@@ -109,7 +109,7 @@ the wrong directory.
 In this exercise you'll bring together several different concepts to build a
 password validator.
 
-:alert: Please do a [screen recording](../../pills/screen_recordings.md) of
+:warning: Please do a [screen recording](../../pills/screen_recordings.md) of
 yourself working on this exercise so that your coach can see how you're getting
 on. You can upload it, along with your code, using the form at the end of this
 file.
