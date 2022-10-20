@@ -4,14 +4,7 @@ In this section, you will learn about functions. This will get you a step closer
 to being able to build the first challenge of this module, a password validator.
 
 
-/** EDU
-
-Videos pending, 2022-10-20.
-## Video
-
-Here's the [video]() for this section.
-
-**/
+<!-- OMITTED -->
 
 ## Learning Objectives
 

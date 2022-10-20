@@ -12,7 +12,7 @@ onto the programming challenge. You must complete both before going
 To get the exercises onto your machine, you'll need to fork and then clone this
 repo.
 
-If you're not sure how to do that, watch [this short video](/** @TODO **/).
+If you're not sure how to do that, watch [this short video](<!-- OMITTED -->).
 
 ### Installing Dependencies
 
@@ -101,7 +101,7 @@ the wrong directory.
 5. Move on to the next set
 6. Keep going until all the tests for all the sets are passing
 7. :alert: [Zip up](../../pills/creating_zipfiles.md) your code so that you're
-   ready to share it later /** @TODO check this **/
+   ready to share it later <!-- OMITTED -->
 8. Move on to the programming challenge
 
 ## Programming Challenge
@@ -125,7 +125,7 @@ file.
 6. Keep going until all the tests pass
 
 If you get stuck, consult the [Breaking Down
-Problems](../../pills/breaking_down_problems.ed.md) guide.
+Problems](../../pills/breaking_down_problems.md) guide.
 
 ## Submitting Your Work
 
@@ -134,7 +134,7 @@ submit your code and screen recording
 
 ## What Next?
 
-Go back [here](../11_putting_chapter_1_into_practice.ed.md#reflect-and-review)
+Go back [here](../11_putting_chapter_1_into_practice.md#reflect-and-review)
 to reflect on your progress before moving on.
 
 

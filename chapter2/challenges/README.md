@@ -33,13 +33,13 @@ directory.
 3. [Start recording](../../pills/screen_recordings.md) 🎥
 4. Complete the program exercise
 5. [Reflect on your
-   progress](../06_putting_chapter_2_into_practice.ed.md#reflect-and-review)
+   progress](../06_putting_chapter_2_into_practice.md#reflect-and-review)
 6. [Submit your
    work](https://airtable.com/shr6mk28x0fy3OrxN?prefill_Item=pyf_ch2)
 7. Move on to chapter 3.
 
 If you get stuck, consult the [Breaking Down
-Problems](../../pills/breaking_down_problems.ed.md) guide.
+Problems](../../pills/breaking_down_problems.md) guide.
 
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
