@@ -12,9 +12,7 @@ src="../images/ifs_flowchart.svg" width="500">
 
 In programming, as in life, we need the ability to make decisions based on data.
 
-## Video
-
-Here's the [video](<!-- OMITTED -->) for this section.
+<!-- OMITTED -->
 
 ## Learning Objectives
 
@@ -221,7 +219,7 @@ that the code on that line will execute only if the condition is `True`.
   <hr>
 </details>
 
-Just remember, as a rule of thumb, if a line of python ends with a colon `:`
+Just remember, as a rule of thumb, if a line of Python ends with a colon `:`
 then the next line will be indented.
 
 ### Equal and Not Equal

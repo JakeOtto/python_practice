@@ -4,9 +4,7 @@ We ended the previous section on a cliffhanger, trying to decipher the meaning
 of an error message. In this short section, you'll see how to break it down and
 extract useful information.
 
-## Video
-
-Here's the [video](<!-- OMITTED -->) for this section.
+<!-- OMITTED -->
 ## Learning Objectives
 
 In this section, you'll learn to:

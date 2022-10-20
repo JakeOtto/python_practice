@@ -1,30 +1,68 @@
+# == EXERCISES ==
 
-# return 'fizz' if the number is divisible by 3
-# return 'buzz' if the number is divisible by 5
-# return 'fizzbuzz' if the number is divisible by 15
-# clue - you can check divisibility using modulo (%)
+# Purpose: implements a childhood game
+# Rules:   if the number is divisible by 3, return 'fizz'
+#          if the number is divisible by 5, return 'buzz'
+#          if the number is divisible by 15, return 'fizzbuzz'
+#          otherwise, return the number
+# Clue: you can check divisibility using modulo (%)
+# Example:
+#   Call:    fizz_buzz(3)
+#   Returns: "fizz"
+#   Call:    fizz_buzz(5)
+#   Returns: "buzz"
+#   Call:    fizz_buzz(15)
+#   Returns: "fizzbuzz"
+#   Call:    fizz_buzz(8)
+#   Returns: 8
 def fizz_buzz(number):
+    # your code goes here (delete the pass below)
     pass
 
-# if the greeting is 'good morning'
-# return 'good morning to you too'
-# if the greeting is 'hello'
-# return 'hi'
-# if the greeting is anything else
-# return the greeting that was received
+
+# Purpose: responds to the user's greeting
+# Rules:   if the greeting is 'good morning'
+#          return 'good morning to you too'
+#          if the greeting is 'hello'
+#          return 'hi'
+#          if the greeting is anything else
+#          return the greeting that was received
+# Example:
+#   Call:    reply_to("good morning")
+#   Returns: "good morning to you too"
+#   Call:    reply_to("hello")
+#   Returns: "hi"
+#   Call:    reply_to("how are you?")
+#   Returns: "how are you?"
 def reply_to(greeting):
+    # your code goes here (delete the pass below)
     pass
 
-# when the number is greater than or equal to 10
-# deduct 10 and return the result
-# when the number is below 10
-# return the number
+# Purpose: deducts 10 from a number if it is greater than or equal to 10,
+#          otherwise returns the number
+# Example:
+#   Call:    deduct_10_if_possible(25)
+#   Returns: 15
+#   Call:    deduct_10_if_possible(10)
+#   Returns: 0
+#   Call:    deduct_10_if_possible(9)
+#   Returns: 9
 def deduct_10_if_possible(number):
+    # your code goes here (delete the pass below)
     pass
 
-# if the number is below 100
-# return 100
-# if the number is above 100
-# return the number
+
+# Purpose: if the number is below 100, return 100, otherwise return the number
+# Example:
+#   Call:    top_up_to_100(25)
+#   Returns: 100
+#   Call:    top_up_to_100(100)
+#   Returns: 100
+#   Call:    top_up_to_100(101)
+#   Returns: 101
 def top_up_to_100(number):
+    # your code goes here (delete the pass below)
     pass
+
+
+# Congrats, you're done with this file. Move on to the next one.

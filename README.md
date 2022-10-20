@@ -11,22 +11,23 @@ like problem decomposition, debugging, and using a REPL (more on this later).
 
 #### By the end of the module, you will be able to
 
-- Execute Python code in two different ways
-- Make a plan using problem decomposition and experimentation
-- Describe and use variables
-- Describe and use conditionals
-- Describe and use lists
-- Describe and use dictionaries
-- Describe and use loops to go through collections
-- Describe and use methods & functions
-- Describe and use classes
-- Build programs using all of the above!
+* Execute Python code in two different ways
+* Make a plan using problem decomposition and experimentation
+* Describe and use variables
+* Describe and use conditionals
+* Describe and use lists
+* Describe and use dictionaries
+* Describe and use loops to go through collections
+* Describe and use methods & functions
+* Describe and use classes
+* Build programs using all of the above!
 
 ## Structure
 
+<!-- OMITTED -->
+
 There are three chapters to work through. These chapters are broken up into
-sections (pages) each of which has both text and video versions. You should use
-either the video or text versions, or both, as suits you best.
+sections (pages).
 
 The first chapter introduces a range of new concepts. These are then built on in
 the later chapters. This process of introducing a topic and then revisiting it
@@ -50,7 +51,7 @@ moving on. There are two types of challenge:
   challenges so that your coach can understand how you're doing.
 
 At the end of each file, we'll ask you to log your progress using a link to a
-form. This will only take a couple of seconds and  will help your coach
+form. This will only take a couple of seconds and will help your coach
 understand your progress.
 
 ## Sequence

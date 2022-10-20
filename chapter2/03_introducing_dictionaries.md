@@ -1,55 +1,104 @@
-#  Dictionaries
+# Dictionaries
 
- Dictionaries are a bit like Lists, because they also allow you to store a collection of things.  Dictionaries, however, allow you to associate a label with each of your items, which can help to make your data a little easier to understand.  Consider the list below...
+Dictionaries, like lists, store a collection of items.
 
-``` python
-> ['pippa', 25, 'percy', 'swimming', 'football', 327]
+However, they also allow you to associate a label with each item.
+
+Let's look at this list:
+
+```python
+>>> my_friend = ["Pippa", 25, "orange"]
 ```
 
-What exactly does each element correspond to? It's hard to tell without labels and that's where  Dictionaries come in. Most programming languages include something along the lines of a Dictionary. They might use a different name, like HashMap or Hash, but the basic concept is always the same.
+You probably think yeah, that's Pippa, she's 25 years old and her favourite
+colour is orange.
 
-## Video
+But let's take a look at this in dictionary form...
 
-Here's the (<!-- OMITTED -->)[video](https://youtu.be/XYw5GQEoNqk) for this section.
+```python
+>>> my_friend = {
+        "name": "Pippa",
+        "horses": 25,
+        "deadly_weapon": "orange" 
+    }
+```
+
+Actually my friend Pippa has twenty-five horses at her command and if you see
+her coming for you with an orange you had better run! And you'd better go fast
+because she's riding multiple horses! Sprint!
+
+Labels are important in programming, otherwise we or our colleagues may make
+mistakes. Hence: dictionaries.
+
+<!-- OMITTED -->
 
 ## Learning Objectives
 
-In this section, you will learn
+In this section, you will learn to:
 
-- How to create a Dictionary, in  python
-- How to read values stored in Dictionary
-- How to add key-value pairs to a Dictionary
-- How to execute some simple Dictionary methods
+* Explain what a dictionary is
+* Create dictionaries
+* Add key-value pairs to a dictionary
+* Read values stored in a dictionary
+* Use some methods on dictionaries
 
 ## Part One: Creating a Dictionary
 
- Dictionaries are made up of key-value pairs. The _key_ is a label and the _value_ is the piece of data that you wish to store. They look like this.
+Dictionaries are made up of key-value pairs. The _key_ is the label and the
+_value_ is the piece of data that you wish to store.
+
+They look like this:
 
 ``` python
 >>> person = {
->>>   "name":"Guido van Rossum",
->>>   "nationality":"Netherlands",
->>>   "favorite_programming_language" : " python"
->>> }
+...   "name": "Guido van Rossum",
+...   "nationality": "Dutch",
+...   "favorite_programming_language": "Python"
+... }
 >>> person
- {"name":"Guido van Rossum", "nationality":"Dutch", "favorite_programming_language":" python"}
+{'name': 'Guido van Rossum', 'nationality': 'Dutch', 'favorite_programming_language': 'Python'}
 ```
 
-**Note that for Lists we use square brackets, but for Dictionaries we use curly braces.**
+**Note that for lists we use square brackets, but for dictionaries we use curly
+braces.**
 
-Now open a python REPL and create a few  Dictionaries of your own. You'll inevitably make a mistake at some point and  python will show you an error message. Try to understand it – new error messages can be learning opportunities!
+Open a Python REPL and create a few dictionaries of your own:
 
-After you've created a few  Dictionaries, try using something other than a String for the keys. What works? What doesn't work?
+* A dictionary containing your name, age, and nationality (or one of them).
+* A dictionary containing the capital city of the first five countries you can
+  think of.
 
+<details>
+  <summary>:speech_balloon: Isn't it a bit inconsiderate of you to ask us to pick one nationality?</summary>
+
+  <hr>
+  
+  That's fair. Try this:
+
+``` python
+  >>> person = {
+  ...   "name": "Jim Carrey",
+  ...   "nationality": ["Canadian", "American"],
+  ...   "favorite_programming_language": "Java"
+  ... }
+  >>> person
+  {'name': 'Jim Carrey', 'nationality': ['Canadian', 'American'], 'favorite_programming_language': 'Java'}
+  ```
+
+  <hr>
+</details>
+
+After you've created a few dictionaries, try using something other than a
+string for the keys. What works? What doesn't work?
 
 ## Part Two: Reading Individual Values
 
 Once you have a dictionary, you can read an individual _value_ using its _key_.
 
 ``` python
->>> # first create and assign the person dictionary, as above, then...
+# First, create and assign the person dictionary as above. Then:
 >>> person['name']
-"Guido van Rossum"
+'Guido van Rossum'
 >>> person['nationality']
 'Dutch'
 ```
@@ -58,50 +107,45 @@ Do this a few times to get some practice.
 
 ## Part Three: Adding Key-Value Pairs
 
-If you already have a dictionary and wish to add new key-value pairs, you can do so using the `[]` method.
+If you already have a dictionary and wish to add new key-value pairs, you can do
+so using the `[]` syntax.
 
 ``` python
->>> # first create and assign the person dictionary, as above, then...
->>> # add a key-value pair
+# First, create and assign the person dictionary as above. Then:
 >>> person["birthday"] = "31 January"
->>> # add another key-value pair
 >>> person["favourite_colour"] = "Purple"
->>> # observe that the dictionary has changed
 >>> person
-{"name":"Guido van Rossum", "nationality":"Dutch", "favorite_programming_language":" python", "birthday":"31 January", "favourite_colour":"Purple}
+{'name': 'Guido van Rossum', 'nationality': 'Dutch', 'favorite_programming_language': 'Python', 'birthday': '31 January', 'favourite_colour': 'Purple'}
 ```
 
-Now you do the same! Create a new dictionary and add some key-value pairs as shown above. Better still, do that a few times so that you start to build some familiarity with the `[]` method.
+Now you do the same! Create a new dictionary and add some key-value pairs as
+shown above. Better still, do that a few times so that you start to build some
+familiarity with the `[]` syntax.
 
 ## Part Four: More Dictionary Methods
 
-In section 2 we learned about `list` methods, which are methods that you can call on any `list`.  We also saw how you can find new list methods using the  python docs.
+Let's learn some dictionary methods.
 
-In this section, you'll learn some `Dictionary` methods which, unsurprisingly, you can call on any `Dictionary` and, of course, you can find new `Dictionary` methods using the  python docs.  For Python version 3.10.6, you'll find them [here](https://docs.python.org/3/tutorial/datastructures.html#dictionaries).  If you're using another version, go to the same link and then edit the URL to reflect the version you're using.
+Here's a practice dictionary for you:
 
-Recall the requirement below...
+```python
+>>> practice_dict = { "London": "England", "Edinburgh": "Scotland", "Cardiff": "Wales", "Belfast": "Northern Ireland" }
+```
 
-> Allow you to see a list of all the services for which a password has been stored
+Try out each of the following methods on this list and try to work out what it
+does.
 
-To meet this requirement, we'll need a method that returns all the dictionary keys.
+* `keys()`
+* `values()`
+* `get(key)`
+* `items()`
+* `pop(key)`
+* `clear()`
+* `setdefault(key, default)`
 
-If you feel like a challenge, try to find the method that returns all the `Dictionary` keys as a `List`, using the  python docs (or google).  The solution is below.
-
-<details>
-  <summary>Solution</summary>
-  <img src="./images/dictionary_keys.png"></img>
-</details>
-<br>
-
-Now get some practice with that method and the ones listed below, some of which will require an argument – use the python docs to find out more.
-
-- `values()`
-- `get()`
-- `items()`
-- `pop()`
-- `pop_item()`
-- `clear()`
-- `shiftset_default('takes an arg!')`
+You can find more [dictionary
+methods](https://docs.python.org/3/library/stdtypes.html#typesmapping
+in the Python Docs.
 
 ## Reflect and Review
 
@@ -110,12 +154,11 @@ In this section, you learned about how to create and manipulate  Dictionaries.
 **Please pause at this point to reflect and review your learning...**
 
 In a few sentences, explain, in writing or to a peer:
-- What a Dictionary is
-- How to create a Dictionary
-- How to add key-value pairs to a Dictionary
-- How to retrieve a value from a Dictionary
-- How to retrieve all the keys from a Dictionary
-- The use of one other dictionary method that you experimented with
+* What a Dictionary is
+* How to create a Dictionary
+* How to add key-value pairs to a Dictionary
+* How to retrieve a value from a Dictionary
+* How to retrieve all the keys from a Dictionary
 
 
 [Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=03_introducing_dictionaries.md&repository=makersacademy%2Fpython_foundations&redirect=chapter2%2F04_introducing_classes.md)

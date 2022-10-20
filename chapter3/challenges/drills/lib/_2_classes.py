@@ -1,118 +1,180 @@
-# In these exercises, you'll define a few small classes
-# The first ones will be familiar
-# Do them without looking back at your previous work
-# The next will be a bit more complex
-# And so on...
-
-# In some cases, you'll define classes with methods that manipulate lists or dictionaries
-
-# The requirements will be provided as follows
-
-# Class Name
-# Initialization args, if there are any
-# Method Name
-# Method arguments, if there are any
-# Method return value
-# Examples, if needed
-# More methods, as needed
-
-# Example requirements
-
-# Greeter
-# hello
-# Takes one string as an arg (a name)
-# Returns 'Hello, Rita', if the arg is 'Rita'
-
-# Example solution
-
-class Greeter():
-  def hello(self, name):
-    return 'Hello, ' + name
-
-
-# Greeter
-# hello
-# Takes one string as an arg (a name)
-# Returns 'Hello, Rita', if the arg is 'Rita'
-# goodbye
-# Takes one string as an arg (a name)
-# Returns 'Goodbye, Sam', if the arg is 'Sam'
-# goodnight
-# Takes one string as an arg (a name)
-# Returns 'Goodnight, Jo', if the arg is 'Jo'
-# goodmorning
-# Takes one string as an arg (a name)
-# Returns 'Goodmorning, Alex', if the arg is 'Alex'
-
-# Calculator
-# add
-# takes two numbers as args
-# returns the total
-# multiply
-# takes two numbers as args
-# multiplies one by the other
-# returns the result
-# subtract
-# takes two numbers as args
-# subtracts the second from the first
-# returns the result
-# divide
-# takes two numbers as args
-# divides the first by the second
-# returns the result
-# history
-# takes no args
-# returns the results of all previous calculations
-
-# Basket
-# add
-# takes one argument of any type
-# adds it to the list of items
-# items
-# returns everything that has been added to the basket
-
-# Cohort
-# add_student
-# takes one hash, representing a student, as an arg.
-# E.g. {'name' : 'Jo', 'employer' : 'NASA'}
-# adds the new student to the list of students
-# students
-# returns all the students who have been added to the cohort
-# employed_by
-# takes one string, the name of an employer, as an arg.
-# E.g. 'NASA'
-# returns only the students who work for that employer
-
-# Person
-# is initialized with a complex hash, for example...
-{
-  'name' : 'alex',
-  'pets' : [
-    {'name' : 'arthur', 'animal' : 'cat'},
-    {'name' : 'judith', 'animal' : 'dog'},
-    {'name' : 'gwen', 'animal' : 'goldfish'}
-  ],
-  'addresses' : [
-    {'name' : 'work', 'building' : '50', 'street' : 'Commercial Street'},
-    {'name' : 'home', 'building' : '10', 'street' : 'South Street'}
-  ]
-}
-
-# work_address
-# takes no args
-# returns the work address in a nice format
-# E.g. '50 Commercial Street'
-# home_address
-# takes no args
-# returns the home address in a nice format
-# E.g. '10 South Street'
-# pets
-# takes no args
-# returns a nice summary of the person's pets
-
-# E.g.
-# Alex has 3 pets
-# - a cat called Arthur
-# - a dog called Judith
-# - a goldfish called Gwen
+# == INSTRUCTIONS ==
 #
+# In these exercises you will build small classes.
+#
+# The first ones will be familiar, do them without looking at oyur previous
+# work. The later ones will be more complex.
+#
+# Here is an example of some exercise instructions and a solution.
+#
+# Class name: ExampleGreeter
+# Purpose: say hello and goodbye to a user with a given name
+# Methods:
+#   1. Name: __init__
+#      Arguments: one, a string representing a name
+#   2. Name: say_hello
+#      Arguments: none
+#      Returns: a string like 'Hello, NAME!'
+#   3. Name: say_goodbye
+#      Arguments: none
+#      Returns: a string like 'Goodbye, NAME!'
+# Example usage:
+#   > greeter = Greeter('Bobby')
+#   > greeter.say_hello
+#   'Hello, Bobby!'
+#   > greeter.say_goodbye
+#   'Goodbye, Bobby!'
+#
+# Example solution follows.
+
+
+
+# == EXERCISES ==
+
+# Class name: Greeter
+# Purpose: say various greetings to a user with a given name
+# Methods:
+#   1. Name: __init__
+#      Arguments: none
+#   2. Name: hello
+#      Arguments: one, a string representing a name
+#      Returns: a string like 'Hello, NAME!'
+#   3. Name: goodbye
+#      Arguments: one, a string representing a name
+#      Returns: a string like 'Goodbye, NAME!'
+#   4. Name: good_night
+#      Arguments: one, a string representing a name
+#      Returns: a string like 'Good night, NAME!'
+#   5. Name: good_morning
+#      Arguments: one, a string representing a name
+#      Returns: a string like 'Good morning, NAME!'
+# Example usage:
+#   > greeter = Greeter()
+#   > greeter.hello('Bobby')
+#   'Hello, Bobby!'
+#   > greeter.goodbye('Bobby')
+#   'Goodbye, Bobby!'
+#   > greeter.good_night('Bobby')
+#   'Good night, Bobby!'
+#   > greeter.good_morning('Bobby')
+#   'Good morning, Bobby!'
+
+
+
+# Class name: Basket
+# Purpose: store a list of items
+# Methods:
+#   1. Name: __init__
+#      Arguments: none
+#   2. Name: add
+#      Arguments: one item of any type
+#      Returns: nothing
+#   3. Name: list_items
+#      Arguments: none
+#      Returns: a list of all the items that have been added
+# Example usage:
+#   > basket = Basket()
+#   > basket.add('apple')
+#   > basket.add('banana')
+#   > basket.add('orange')
+#   > basket.list_items()
+#   ['apple', 'banana', 'orange']
+
+
+
+# Class name: Calculator
+# Purpose: perform simple calculations and track the history
+# Methods:
+#   1. Name: __init__
+#      Arguments: none
+#   2. Name: add
+#      Arguments: two numbers
+#      Returns: the result of adding the two numbers
+#   3. Name: multiply
+#      Arguments: two numbers
+#      Returns: the result of multiplying the first by the second
+#   4. Name: subtract
+#      Arguments: two numbers
+#      Returns: the result of subtracting the second from the first
+#   5. Name: divide
+#      Arguments: two numbers
+#      Returns: the result of dividing the first by the second
+#   6. Name: list_history
+#      Arguments: none
+#      Returns: a list of all the previous results calculations
+# Example usage:
+#   > calculator = Calculator()
+#   > calculator.add(1, 2)
+#   3
+#   > calculator.multiply(3, 4)
+#   12
+#   > calculator.subtract(5, 6)
+#   -1
+#   > calculator.divide(7, 8)
+#   0.875
+#   > calculator.list_history()
+#   [3, 12, -1, 0.875]
+
+
+
+# Class name: Cohort
+# Purpose: store a list of students
+# Methods:
+#   1. Name: __init__
+#      Arguments: none
+#   2. Name: add_student
+#      Arguments: one dictionary representing a student
+#      Returns: nothing
+#   3. Name: list_students
+#      Arguments: none
+#      Returns: a list of all the students that have been added
+#   4. Name: list_employed_by
+#      Arguments: one string, the name of an employer
+#      Returns: a list of all the students who work for that employer
+# Example usage:
+#   > cohort = Cohort()
+#   > cohort.add_student({'name' : 'Jo', 'employer' : 'NASA'})
+#   > cohort.add_student({'name' : 'Alex', 'employer' : 'NASA'})
+#   > cohort.add_student({'name' : 'Bobby', 'employer' : 'Google'})
+#   > cohort.list_students()
+#   [{'name' : 'Jo', 'employer' : 'NASA'}, {'name' : 'Alex', 'employer' : 'NASA'}, {'name' : 'Bobby', 'employer' : 'Google'}]
+#   > cohort.list_employed_by('NASA')
+#   [{'name' : 'Jo', 'employer' : 'NASA'}, {'name' : 'Alex', 'employer' : 'NASA'}]
+
+
+
+# Class name: Person
+# Purpose: store a person's name, pets and addresses
+# Methods:
+#   1. Name: __init__
+#      Arguments: one complex dictionary, see below for structure.
+#   2. Name: get_work_address
+#      Arguments: none
+#      Returns: the work address in a nice format
+#   3. Name: get_home_address
+#      Arguments: none
+#      Returns: the home address in a nice format
+#   4. Name: get_pets
+#      Arguments: none
+#      Returns: a nice summary of the person's pets
+# Example usage:
+#   > person = Person({
+#       'name' : 'alex',
+#       'pets' : [
+#         {'name' : 'arthur', 'animal' : 'cat'},
+#         {'name' : 'judith', 'animal' : 'dog'},
+#         {'name' : 'gwen', 'animal' : 'goldfish'}
+#       ],
+#       'addresses' : [
+#         {'name' : 'work', 'building' : '50', 'street' : 'Commercial Street'},
+#         {'name' : 'home', 'building' : '10', 'street' : 'South Street'}
+#       ]
+#     })
+#   > person.get_work_address()
+#   '50 Commercial Street'
+#   > person.get_home_address()
+#   '10 South Street'
+#   > person.get_pets()
+#   'Alex has 3 pets: a cat called Arthur, a dog called Judith, a goldfish called Gwen'
+
+

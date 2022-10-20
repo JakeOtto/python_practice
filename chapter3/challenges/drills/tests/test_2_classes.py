@@ -1,124 +1,138 @@
-import sys
-
-path = "./"
-
-sys.path.append(path)
-
 from lib._2_classes import *
+
 
 class TestGreeter():
 
     def test_hello(self):
-        self.subject = Greeter()
-        assert self.subject.hello('Azrael') == 'Hello, Azrael' 
+        subject = Greeter()
+        assert subject.hello('Azrael') == 'Hello, Azrael!'
 
     def test_goodbye(self):
-        self.subject = Greeter()
-        assert self.subject.goodbye('Morticius') == 'Goodbye, Morticius'
+        subject = Greeter()
+        assert subject.goodbye('Morticius') == 'Goodbye, Morticius!'
 
-    def test_goodnight(self):
-        self.subject = Greeter()
-        assert self.subject.goodnight('Jo') == 'Goodnight, Jo'
-    
-    def test_goodmorning(self):
-        self.subject = Greeter()
-        assert self.subject.goodmorning('Jo') == 'Goodmorning, Jo'
+    def test_good_night(self):
+        subject = Greeter()
+        assert subject.good_night('Jo') == 'Good night, Jo!'
 
-class TestCalculator():
+    def test_good_morning(self):
+        subject = Greeter()
+        assert subject.good_morning('Jo') == 'Good morning, Jo!'
 
-    def test_add(self):
-        self.subject = Calculator()
-        assert self.subject.add(1,1) == 2
-
-    def test_multiply(self):
-        self.subject = Calculator()
-        assert self.subject.multiply(2, 17) == 34
-
-    def test_subract(self):
-        self.subject = Calculator()
-        assert self.subject.subtract(2, 17) == 15
-
-    def test_divide(self):
-        self.subject = Calculator()
-        assert self.subject.divide(30, 3) == 10
 
 class TestBasket():
 
     def test_add(self):
-        self.subject = Basket()
-        self.subject.add('eggs')
-        self.subject.add('milk')
-        self.subject.add('bread')
-        assert self.subject.items == ['eggs', 'milk', 'bread']
+        subject = Basket()
+        subject.add('eggs')
+        subject.add('milk')
+        subject.add('bread')
+        assert subject.list_items() == ['eggs', 'milk', 'bread']
+
+
+class TestCalculator():
+
+    def test_add(self):
+        subject = Calculator()
+        assert subject.add(1, 1) == 2
+
+    def test_multiply(self):
+        subject = Calculator()
+        assert subject.multiply(2, 17) == 34
+
+    def test_subract(self):
+        subject = Calculator()
+        assert subject.subtract(2, 17) == -15
+
+    def test_divide(self):
+        subject = Calculator()
+        assert subject.divide(30, 3) == 10
+
+    def test_history(self):
+        subject = Calculator()
+        subject.add(1, 2)
+        subject.multiply(3, 4)
+        subject.subtract(5, 6)
+        subject.divide(7, 8)
+        assert subject.list_history() == [3, 12, -1, 0.875]
+
 
 class TestCohort():
 
     def test_add_student(self):
-        self.subject = Cohort() 
-        self.subject.add_student({'name' : 'Gene', 'employer' : 'Atlantis Digital'})
-        self.subject.add_student({'name' : 'Petra', 'employer' : 'Atlantis Digital'})
-        self.subject.add_student({'name' : 'Jaspal', 'employer' : 'Mercia Digital'})
+        subject = Cohort()
+        subject.add_student(
+            {'name': 'Gene', 'employer': 'Atlantis Digital'})
+        subject.add_student(
+            {'name': 'Petra', 'employer': 'Atlantis Digital'})
+        subject.add_student(
+            {'name': 'Jaspal', 'employer': 'Mercia Digital'})
 
-        assert self.subject.students == ([
-          {'name' : 'Gene', 'employer' : 'Atlantis Digital'},
-          {'name' : 'Petra', 'employer' : 'Atlantis Digital'},
-          {'name' : 'Jaspal', 'employer' : 'Mercia Digital'}
+        assert subject.list_students() == ([
+            {'name': 'Gene', 'employer': 'Atlantis Digital'},
+            {'name': 'Petra', 'employer': 'Atlantis Digital'},
+            {'name': 'Jaspal', 'employer': 'Mercia Digital'}
         ])
 
     def test_employed_by(self):
-        self.subject = Cohort() 
-        self.subject.add_student({'name' : 'Gene', 'employer' : 'Atlantis Digital'})
-        self.subject.add_student({'name' : 'Petra', 'employer' : 'Atlantis Digital'})
-        self.subject.add_student({'name' : 'Jaspal', 'employer' : 'Mercia Digital'})
+        subject = Cohort()
+        subject.add_student(
+            {'name': 'Gene', 'employer': 'Atlantis Digital'})
+        subject.add_student(
+            {'name': 'Petra', 'employer': 'Atlantis Digital'})
+        subject.add_student(
+            {'name': 'Jaspal', 'employer': 'Mercia Digital'})
 
-        assert self.subject.employed_by('Atlantis Digital') == [
-          {'name' : 'Gene', 'employer' : 'Atlantis Digital'},
-          {'name' : 'Petra', 'employer' : 'Atlantis Digital'}
+        assert subject.list_employed_by('Atlantis Digital') == [
+            {'name': 'Gene', 'employer': 'Atlantis Digital'},
+            {'name': 'Petra', 'employer': 'Atlantis Digital'}
         ]
+
 
 class TestPerson():
 
     def test_work_address(self):
-        self.subject = Person({
-          'name' : 'Jo',
-          'pets' : [
-            {'name' : 'Paulo', 'animal' : 'cat'},
-            {'name' : 'Edith', 'animal' : 'dog'},
-            {'name' : 'Pawel', 'animal' : 'goldfish'}
-          ],
-          'addresses' : [
-            {'name' : 'work', 'building' : '12', 'street' : 'Whitehall'},
-            {'name' : 'home', 'building' : '1', 'street' : 'North Lane'}
-          ]
+        subject = Person({
+            'name': 'Jo',
+            'pets': [
+                {'name': 'Paulo', 'animal': 'cat'},
+                {'name': 'Edith', 'animal': 'dog'},
+                {'name': 'Pawel', 'animal': 'goldfish'}
+            ],
+            'addresses': [
+                {'name': 'work', 'building': '12', 'street': 'Whitehall'},
+                {'name': 'home', 'building': '1', 'street': 'North Lane'}
+            ]
         })
-        assert self.subject.work_address == '12 Whitehall'
+        assert subject.get_work_address() == '12 Whitehall'
 
     def test_home_address(self):
-        self.subject = Person({
-          'name' : 'Jo',
-          'pets' : [
-            {'name' : 'Paulo', 'animal' : 'cat'},
-            {'name' : 'Edith', 'animal' : 'dog'},
-            {'name' : 'Pawel', 'animal' : 'goldfish'}
-          ],
-          'addresses' : [
-            {'name' : 'work', 'building' : '12', 'street' : 'Whitehall'},
-            {'name' : 'home', 'building' : '1', 'street' : 'North Lane'}
-          ]
+        subject = Person({
+            'name': 'Jo',
+            'pets': [
+                {'name': 'Paulo', 'animal': 'cat'},
+                {'name': 'Edith', 'animal': 'dog'},
+                {'name': 'Pawel', 'animal': 'goldfish'}
+            ],
+            'addresses': [
+                {'name': 'work', 'building': '12', 'street': 'Whitehall'},
+                {'name': 'home', 'building': '1', 'street': 'North Lane'}
+            ]
         })
-        assert self.subject.home_address == '1 North Lane'
+        assert subject.get_home_address() == '1 North Lane'
 
     def test_pets(self):
-        self.subject = Person({
-          'name' : 'Jo',
-          'pets' : [
-            {'name' : 'Paulo', 'animal' : 'cat'},
-            {'name' : 'Edith', 'animal' : 'dog'},
-            {'name' : 'Pawel', 'animal' : 'goldfish'}
-          ],
-          'addresses' : [
-            {'name' : 'work', 'building' : '12', 'street' : 'Whitehall'},
-            {'name' : 'home', 'building' : '1', 'street' : 'North Lane'}
-          ]
+        subject = Person({
+            'name': 'Jo',
+            'pets': [
+                {'name': 'Paulo', 'animal': 'cat'},
+                {'name': 'Edith', 'animal': 'dog'},
+                {'name': 'Pawel', 'animal': 'goldfish'}
+            ],
+            'addresses': [
+                {'name': 'work', 'building': '12', 'street': 'Whitehall'},
+                {'name': 'home', 'building': '1', 'street': 'North Lane'}
+            ]
         })
-        assert self.subject.pets == "Jo has 3 pets\n- a cat called Paulo\n- a dog called Edith\n- a goldfish called Pawel\n"
+        assert subject.get_pets(
+        ) == "Jo has 3 pets: a cat called Paulo, a dog called Edith, a goldfish called Pawel"

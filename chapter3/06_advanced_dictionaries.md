@@ -1,4 +1,4 @@
-# Dictionaries Part II
+# Advanced Dictionaries
 
 In chapter 2, you learned how to create and manipulate dictionaries.
 
@@ -15,9 +15,7 @@ In chapter 2, you learned how to create and manipulate dictionaries.
 
 You also know how to get a list of all the keys or all the values using `person.keys()` and `person.values()`. Now it's time to take things a little further.
 
-## Video
-
-Here's the (<!-- OMITTED -->)[video](https://youtu.be/606Npc3rJSs) for this section.
+<!-- OMITTED -->
 
 ## Learning Objectives
 
@@ -33,7 +31,7 @@ But as we saw in the previous section, `list comprehensions` take that trusty fo
 Let's take this example:
 
 ``` python
->>> square_dict = dict()
+>>> square_dict = {}
 >>> for num in range(1, 11):
 ...     square_dict[num] = num*num
 ... 

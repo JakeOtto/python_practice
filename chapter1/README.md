@@ -5,19 +5,19 @@
 In this chapter, you'll work towards seven of the module's ten learning
 objectives:
 
-1. Execute Python code in two different ways
-2. Make a plan using problem decomposition and experimentation
-3. Describe and use variables
-4. Describe and use conditionals
-5. Describe and use control flow
-6. Describe and use methods
-7. Build programs using all of the above!
+* Execute Python code in two different ways
+* Make a plan using problem decomposition and experimentation
+* Describe and use variables
+* Describe and use conditionals
+* Describe and use control flow
+* Describe and use methods and functions
+* Build programs using all of the above!
 
 These will come in later chapters:
 
-1. Describe and use lists
-2. Describe and use dictionaries
-3. Describe and use classes
+* Describe and use lists
+* Describe and use dictionaries
+* Describe and use classes
 
 ## The Big Picture
 
@@ -31,7 +31,7 @@ you'll learn about _refactoring_ and in section 13, you'll review your learning.
 2. [Error Messages](./02_error_messages.md)
 3. [Functions](./03_functions.md)
 4. [Methods](./04_methods.md)
-5. [Further String Manipulation](05_further_string_manipulation.md)
+5. [Further String Manipulation](./05_further_string_manipulation.md)
 6. [Beyond Strings](./06_beyond_strings.md)
 7. [Conditionals](./07_conditionals.md)
 8. [Control Flow](./08_control_flow.md)

@@ -1,8 +1,10 @@
 # Putting it into Practice
 
-In this section, you'll put everything from chapter 1 into practice by working on a series of challenges.
+In this section, you'll put everything from chapter 1 into practice by working
+on a series of challenges.
 
-Please go [here](./challenges/README.md) to get started and then come back to reflect on your progress before moving on to section 10.
+Please go [here](./challenges/README.md) to get started and then come back to
+reflect on your progress before moving on to section 10.
 
 ## Reflect and Review
 

@@ -5,9 +5,7 @@ built in functions. In this section, you'll learn about methods.
 
 Methods are functions that are closely tied to a particular piece of data.
 
-## Video
-
-Here's the [video](<!-- OMITTED -->) for this section.
+<!-- OMITTED -->
 
 ## Learning Objectives
 
@@ -38,19 +36,19 @@ These are required elements of the syntax for calling a method.
 Here's another example using `lower` on the string `"PYTHON"`.
 
 ```python
->>> word = "HELLO"
+>>> word = "PYTHON"
 >>> word.lower()
-'hello'
+'python'
 ```
 
 As you can see, the original string is not changed by `lower`:
 
 ```python
->>> word = "HELLO"
+>>> word = "PYTHON"
 >>> word.lower()
-'hello'
+'python'
 >>> word
-"HELLO"
+"PYTHON"
 ```
 
 ### Now Try This

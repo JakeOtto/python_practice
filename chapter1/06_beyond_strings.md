@@ -1,6 +1,6 @@
 # Beyond Strings
 
-In the first three sections of this chapter we've played with some strings and
+In the preceding sections of this chapter we've played with some strings and
 you've seen that there are a whole load of methods which can be called upon any
 string, such as...
 
@@ -11,7 +11,7 @@ string, such as...
 
 But what if you want to do maths or something else that cannot be done with
 strings? Well, in addition to strings, there are a bunch of other data types and
-each one has it's own selection of methods.  Some examples of those datatypes
+each one has its own selection of methods.  Some examples of those datatypes
 are:
 
 * integers
@@ -23,9 +23,7 @@ are:
 Lists and Dictionaries are complex data types that are introduced in the next
 chapter. The rest are explained below.
 
-## Video
-
-Here's the [video](<!-- OMITTED -->) for this section.
+<!-- OMITTED -->
 
 ## Learning Objectives
 

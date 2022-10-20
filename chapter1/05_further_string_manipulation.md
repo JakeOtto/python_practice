@@ -29,7 +29,7 @@ Here's an example of how to get the first character in `"quick fox"`.
 Python, as with many programming languages, indexes strings (and other
 sequences) starting at 0. We call this **Zero Indexing**.
 
-If we called `len()` on our food string, we'd see there are nine characters
+If we called `len()` on our string, we'd see there are nine characters
 including the space but, indexing from zero, this is what their indices look
 like.
 

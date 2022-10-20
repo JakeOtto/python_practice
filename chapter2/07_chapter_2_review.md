@@ -1,17 +1,22 @@
 # Review Your Learning
 
-In this section, you've worked towards 8 of the module's 10 learning objectives.
+In this section, you've worked towards all ten of this module's learning
+objectives:
 
-- Execute Python code in two different ways :point_left:
-- Make a plan using problem decomposition and experimentation :point_left:
-- Describe and use variables :point_left:
-- Describe and use conditionals :point_left:
-- Describe and use lists :point_left:
-- Describe and use dictionaries :point_left:
-- Describe and use methods & functions :point_left:
-- Describe and use classes :point_left:
+* Execute Python code in two different ways
+* Make a plan using problem decomposition and experimentation
+* Describe and use variables
+* Describe and use conditionals
+* Describe and use lists
+* Describe and use dictionaries
+* Describe and use loops to go through collections
+* Describe and use methods & functions
+* Describe and use classes
+* Build programs using all of the above!
 
-Please take 15 minutes to review them now. Use the following questions to guide you and, if you get stuck, reach out to one of your peers – that will allow them to further test themselves.
+Please take 15 minutes to review them now. Use the following questions to guide
+you and, if you get stuck, reach out to one of your peers — that will allow them
+to further test themselves.
 
 1. How do you create and add items to a List?
 2. How do you create and add items to a Dictionary?

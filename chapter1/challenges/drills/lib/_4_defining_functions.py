@@ -1,98 +1,195 @@
-# In these exercises, you'll be defining methdods, so you start only with a set of requirements for each one.
+# == INSTRUCTIONS ==
+#
+# In these exercises you will define your own functions based on some
+# requirements.
+#
+# The requirements will always start with the name of the function. Use this
+# name exactly or the tests won't be able to find it.
+#
+# Then there will be a description of what the function should do.
+# Note that some solutions will require more than one line of code.
+#
+# Here is an example of the rules:
+#
+# Method name: add_ten
+# Purpose: adds ten to the given number
+# Rules:
+#   Takes one number as an arg
+#   Adds ten and returns the new value
+# Example:
+#   Call:    add_ten(5)
+#   Returns: 15
 
-# the requirements will always start with the name of the function
-# then they'll describe what the function should do
-
-# here's an example of some requirements
-
-# add_ten
-# takes one number as an arg
-# adds ten and returns the new value
-# example: the arg is 5
-# returns 15
-
-# and here's the solution
+# And here is an example of a correct solution:
 
 def add_ten(number):
-  return number + 10
+    new_number = number + 10
+    return new_number
+
+# Let's get started.
+
+# == EXERCISES ==
+
+# Method name: say_hello
+# Purpose: returns the string 'hello'
+# Arguments: none
+# Example:
+#   Call:    say_hello()
+#   Returns: "hello"
 
 
-# TIP: some solutions will require more than one line of code
 
-# now it's over to you!
+# Method name: say_goodbye
+# Purpose: returns the string 'goodbye'
+# Arguments: none
+# Example:
+#   Call:    say_goodbye()
+#   Returns: "goodbye"
 
-# say_hello
-# takes no args
-# returns 'hello'
 
-# say_goodbye
-# takes no args
-# returns 'goodbye'
 
-# say_hello_to
-# takes one string as an arg
-# example: the arg is `Sam`
-# returns `Hello, Sam`
+# Method name: say_hello_to
+# Purpose: greets the given name
+# Arguments: one string
+# Example:
+#   Call:    say_hello_to("Sam")
+#   Returns: "Hello, Sam!"
 
-# say_goodbye_to
-# takes one string as an arg
-# example: the arg is `Sam`
-# returns `Goodbye, Sam`
 
-# square
-# takes one number as an arg
-# multiplies that number by itself
-# returns the new value
 
-# divisible_by_three
-# takes one number as an arg
-# returns true if the number is divisible by three
-# returns false if the number is not divisible by three
+# Method name: say_goodbye_to
+# Purpose: says goodbye to the given name
+# Arguments: one string
+# Example:
+#   Call:    say_goodbye_to("Sam")
+#   Returns: "Goodbye, Sam!"
 
-# add
-# takes two numbers as args
-# adds them together
-# returns the total
 
-# multiply
-# takes two numbers as args
-# multiplies one by the other
-# returns the result
 
-# add_number_strings
-# takes two numbers as strings
-# converts them both to numbers
-# returns the total
+# Method name: square
+# Purpose: multiplies the given number by itself
+# Arguments: one number
+# Example:
+#   Call:    square(5)
+#   Returns: 25
 
-# multiply_number_strings
-# takes two numbers as strings for args
-# converts them both to numbers
-# multiplies one by the other
-# returns the result
 
-# both_odd
-# takes two numbers as args
-# returns true if both are odd
-# otherwise, returns false
 
-# both_even
-# takes two numbers as args
-# returns true if both are even
-# otherwise, returns false
+# Method name: divisible_by_three
+# Purpose: returns true if the given number is divisible by three
+# Arguments: one number
+# Example:
+#   Call:    divisible_by_three(9)
+#   Returns: True
+#   Call:    divisible_by_three(10)
+#   Returns: False
 
-# one_odd
-# takes two numbers as args
-# returns true if at least one of them is odd
-# otherwise, returns false
 
-# one_even
-# takes two numbers as args
-# returns true if at least one of them is even
-# otherwise returns false
 
-# truncate_string
-# takes one string as an arg
-# if the string is longer than 10 characters
-# returns the first 10 chars followed by '...'
-# if the string is 10 chars or less
-# returns the whole string
+# Method name: add
+# Purpose: adds two numbers together
+# Arguments: two numbers
+# Example:
+#   Call:    add(5, 10)
+#   Returns: 15
+
+
+
+# Method name: multiply
+# Purpose: multiplies two numbers together
+# Arguments: two numbers
+# Example:
+#   Call:    multiply(5, 10)
+#   Returns: 50
+
+
+
+# Method name: add_number_strings
+# Purpose: adds two numbers given as strings
+# Arguments: two strings
+# Example:
+#   Call:    add_number_strings("5", "10")
+#   Returns: 15
+# Note: return value should be a number, not a string
+
+
+
+# Method name: multiply_number_strings
+# Purpose: multiplies two numbers given as strings
+# Arguments: two strings
+# Example:
+#   Call:    multiply_number_strings("5", "10")
+#   Returns: 50
+# Note: return value should be a number, not a string
+
+
+
+# Method name: both_odd
+# Purpose: returns true if both numbers are odd
+# Arguments: two numbers
+# Example:
+#   Call:    both_odd(5, 11)
+#   Returns: True
+#   Call:    both_odd(5, 10)
+#   Returns: False
+#   Call:    both_odd(6, 10)
+#   Returns: False
+
+
+
+# Method name: both_even
+# Purpose: returns true if both numbers are even
+# Arguments: two numbers
+# Example:
+#   Call:    both_even(4, 10)
+#   Returns: True
+#   Call:    both_even(5, 10)
+#   Returns: False
+#   Call:    both_even(5, 11)
+#   Returns: False
+
+
+
+# Method name: one_odd
+# Purpose: returns true if at least one number is odd
+# Arguments: two numbers
+# Example:
+#   Call:    one_odd(5, 10)
+#   Returns: True
+#   Call:    one_odd(4, 10)
+#   Returns: True
+#   Call:    one_odd(4, 8)
+#   Returns: False
+
+
+
+# Method name: one_even
+# Purpose: returns true if at least one number is even
+# Arguments: two numbers
+# Example:
+#   Call:    one_even(5, 10)
+#   Returns: True
+#   Call:    one_even(5, 11)
+#   Returns: True
+#   Call:    one_even(5, 9)
+#   Returns: False
+
+
+
+# Method name: truncate_string
+# Purpose: truncates (shortens) a string to 10 characters
+# Arguments: one string
+# Rules:
+#   If the string is longer than 10 characters
+#   return the first 10 characters followed by '...'
+#   If the string is 10 characters or less
+#   return the whole string
+# Example:
+#   Call:    truncate_string("This is a long string")
+#   Returns: "This is a..."
+#   Call:    truncate_string("Short")
+#   Returns: "Short"
+
+
+
+# Congrats, you're done with this file, go back to the Challenges README.

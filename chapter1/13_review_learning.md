@@ -1,20 +1,22 @@
 # Review Your Learning
 
-In this section, you've worked towards 6 of the module's 10 learning objectives.
+In this chapter, you worked towards seven of the module's ten learning
+objectives:
 
-- Execute Ruby code in two different ways :point_left:
-- Make a plan using problem decomposition and experimentation :point_left:
-- Describe and use variables :point_left:
-- Describe and use conditionals :point_left:
-- Describe and use for and while loops :point_left:
-- Describe and use lists
-- Describe and use dictionaries
-- Describe and use functions and methods :point_left:
-- Describe and use classes
+* Execute Python code in two different ways
+* Make a plan using problem decomposition and experimentation
+* Describe and use variables
+* Describe and use conditionals
+* Describe and use control flow
+* Describe and use methods and functions
+* Build programs using all of the above!
 
-If a lot of these topics were new to you, it's very much worth taking 15 minutes to review them. Use the following questions to guide you and, if you get stuck, reach out to one of your peers – that will allow them to further test themselves.
+If a lot of these topics were new to you, it's very much worth taking 15 minutes
+to review them. Use the following questions to guide you and, if you get stuck,
+reach out to one of your peers – that will allow them to further test
+themselves.
 
-1. Name two ways of executing Ruby code.
+1. Name two ways of executing Python code.
 2. How are functions defined?
 3. When would a method or a function take an argument?
 4. What is the basic structure of an if statement?

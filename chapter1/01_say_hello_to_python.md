@@ -8,9 +8,7 @@ widely used for just about everything, whether it's data science, devops,
 machine learning, robotics or web development. We're sure you'll get a lot out
 of working with Python, and we hope you enjoy it too!
 
-## Video
-
-Here's the [video](<!-- OMITTED -->) for this section.
+<!-- OMITTED -->
 
 ## Learning objectives
 

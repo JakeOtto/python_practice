@@ -1,26 +1,30 @@
 # Scope
 
- The term _scope_ refers to the places in which program objects, such as variables, can be used. In the previous exercise, you saw that the local variables `first_name` and `surname` were only available within the `__init__()` method.  I.e. Their _scope_ is limited to the `__init__()` method.
+The term _scope_ refers to the places in which program objects, such as
+variables, can be used. In the previous exercise, you saw that the local
+variables `first_name` and `surname` were only available within the `__init__()`
+method.  I.e. Their _scope_ is limited to the `__init__()` method.
 
- Instance variables, however, have a broader _scope_ – they are available anywhere within the instance of a class. So you can assign them in the initializer method and then use then in another method, without problem. They are not, however, available outside the class.
+Instance variables, however, have a broader _scope_ – they are available
+anywhere within the instance of a class. So you can assign them in the
+initializer method and then use then in another method, without problem. They
+are not, however, available outside the class.
 
- ## Video
+<!-- OMITTED -->
 
- Here's the (<!-- OMITTED -->)[video](https://youtu.be/ivIdU7JmD5g) for this section
+## Learning Objectives
 
- ## Learning Objectives
-
- In this section, you will learn
- - What scope is
- - What instance variables are
- - The scope of an instance variable
- - The scope of a local variable
+In this section, you will learn
+- What scope is
+- What instance variables are
+- The scope of an instance variable
+- The scope of a local variable
 
 ## An Example
 
- Here's a reminder of the example we gave in the previous section
+Here's a reminder of the example we gave in the previous section
 
- ```python
+```python
 >>> class Person():
 >>>     def __init__(self, first_name, surname):
 >>>         # note that we're not using instance variables here
@@ -29,11 +33,11 @@
 
 >>>     def full_name(self):
 >>>         # will this work without using instance variables above?
->>>    return f"{first_name} #{surname}"
+>>>         return f"{first_name} {surname}"
 
->>> alan_turning = Person.new("Alan", "Turing")
->>> alan_turning.full_name()
->>> # what get's returned here?
+>>> alan_turing = Person("Alan", "Turing")
+>>> alan_turing.full_name()
+>>> # what gets returned here?
 ```
 
 Here's how you could fix it, using instance variables
@@ -47,24 +51,28 @@ Here's how you could fix it, using instance variables
 
 >>>     def full_name(self):
 >>>         # will this work by using instance variables above?
->>>    return f"{self.first_name} #{self.surname}"
+>>>         return f"{self.first_name} {self.surname}"
 
->>> alan_turning = Person.new("Alan", "Turing")
->>> alan_turning.full_name()
+>>> alan_turing = Person("Alan", "Turing")
+>>> alan_turing.full_name()
 "Alan Turing"
 ```
 
 ## An Analogy
 
-Maybe you'd like an analogy at this point. You could compare instance and local variables to local and national newspapers.
+Maybe you'd like an analogy at this point. You could compare instance and local
+variables to local and national newspapers.
 
-Local variables are like local newspapers in that they're only available, or in scope, within a specific neighbourhood (of the codebase). Instance variables are like national newspapers in that they're available anywhere in the class.
+Local variables are like local newspapers in that they're only available, or in
+scope, within a specific neighbourhood (of the codebase). Instance variables are
+like national newspapers in that they're available anywhere in the class.
 
 > Note that instance variables are not in scope (available) outside of a class.
 
 ## Reflect and Review
 
-In this short section, we learned about scope – the areas of a codebase in which a variable is available.
+In this short section, we learned about scope – the areas of a codebase in which
+a variable is available.
 
 **Please pause at this point to reflect and review your learning...**
 
