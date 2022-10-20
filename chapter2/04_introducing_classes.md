@@ -197,7 +197,7 @@ Here's a challenge for you – how might you go about retrieving some of the
 information, such as a `name` from your `Person()` class. The solution is below.
 
 <details>
-<summary>Solution</summary>
+  <summary>Solution</summary>
 
   ```python
   >>> class Person():
@@ -214,18 +214,7 @@ information, such as a `name` from your `Person()` class. The solution is below.
   'Standard Description'
   ```
 
-<p>
-
-There are methods you can write to retrieve this information. How might you go
-about writing one of those? Methods that return information are often called
-`getters`, or getter methods. 
-
-Methods that do the opposite, or, `set` the information of an object are, quite
-rightly often called `setters`, or setter methods.
-
-</p>
 </details>
-<br>
 
 Now try creating your own classes with their own instance variables. If you're
 not sure what classes to create try these:
