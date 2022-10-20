@@ -39,18 +39,6 @@ directory.
 
 If you get stuck, consult the [Breaking Down
 Problems](../../pills/breaking_down_problems.md) guide.
-## Submitting Your Work
-
-Use [this form](https://airtable.com/shr6mk28x0fy3OrxN?prefill_Item=pyf_ch3) to
-submit your code and screen recording
-
-## What Next?
-
-Go back [here](../07_putting_chapter_3_into_practice.md#reflect-and-review)
-to reflect on your progress.
-
-Done before the end of the two weeks? If so, ask your coach for further
-guidance.
 
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
