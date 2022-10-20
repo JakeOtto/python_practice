@@ -23,6 +23,8 @@ themselves.
 5. What is refactoring?
 6. What is the difference between for and while loops?
 
+After this, jump on to [Chapter 2](../chapter2/README.md)
+
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
