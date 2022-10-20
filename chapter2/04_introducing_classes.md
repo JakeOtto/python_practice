@@ -231,14 +231,14 @@ Now try this...
 
 ```Python
 >>> class Person():
->>>  def __init__(first_name, surname):
->>>    # note that we're not using instance variables here
->>>    first_name = first_name
->>>    surname = surname
+>>>     def __init__(self, first_name, surname):
+>>>         # note that we're not using instance variables here
+>>>         first_name = first_name
+>>>         surname = surname
 >>>
->>>  def full_name(self):
->>>    # will this work without using instance variables above?
->>>    return f"{first_name} {surname}"
+>>>     def full_name(self):
+>>>         # will this work without using instance variables above?
+>>>         return f"{first_name} {surname}"
 
 >>> alan_turing = Person("Alan", "Turing")
 >>> alan_turing.full_name()
