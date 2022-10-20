@@ -32,10 +32,10 @@ directory.
    share it later
 3. [Start recording](../../pills/screen_recordings.md) 🎥
 4. Complete the program exercise
-5. [Reflect on your
-   progress](../06_putting_chapter_2_into_practice.md#reflect-and-review)
 6. [Submit your
    work](https://airtable.com/shr6mk28x0fy3OrxN?prefill_Item=pyf_ch2)
+5. [Reflect on your
+   progress](../06_putting_chapter_2_into_practice.md#reflect-and-review)
 7. Move on to chapter 3.
 
 If you get stuck, consult the [Breaking Down
