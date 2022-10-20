@@ -14,7 +14,7 @@ To get this one started, it should be as simple as:
 
 ```shell
 ; cd path/to/python_fundamentals
-; cd chapter1/challenges/drills
+; cd chapter2/challenges/drills
 
 ; pipenv install
 
