@@ -23,7 +23,7 @@ Defining a class in Python is pretty straightforward — you need one new keywor
 
 ```Python
 class Greeter():
-  pass
+    pass
 ```
 
 That's it! Now we have a class called `Greeter`, though it's not very useful.
@@ -31,11 +31,11 @@ Let's add some methods.
 
 ```Python
 class Greeter():
-  def hello(self):
-    return "Hello!"
+    def hello(self):
+        return "Hello!"
 
-  def good_bye(self):
-    return "Good bye!"
+    def good_bye(self):
+        return "Good bye!"
 
 ```
 
@@ -52,8 +52,8 @@ instantiation you might get an error - try it:
 
 ``` python
 >>> class Greeter():
->>>   def hello():
->>>     return "Hello"
+>>>     def hello():
+>>>         return "Hello"
 >>> greeter = Greeter()
 >>> greeter.hello()
 >>> # ???
@@ -152,10 +152,10 @@ when the instance is created.
 
 ```Python
 >>> class Person():
->>>   def __init__(self):
->>>     self.name = "Alan Turing"
->>>     self.birthday = "June 23, 1912"
->>>     self.favourite_language = "C"
+>>>     def __init__(self):
+>>>         self.name = "Alan Turing"
+>>>         self.birthday = "June 23, 1912"
+>>>         self.favourite_language = "C"
 ```
 
 But wait! As things stand, every instance of the Person class will have the same
