@@ -12,9 +12,7 @@ onto the programming challenge. You must complete both before going
 To get the exercises onto your machine, you'll need to fork and then clone this
 repo.
 
-<!-- OMITTED -->).
-
-**/
+<!-- OMITTED -->
 
 ### Installing Dependencies
 
