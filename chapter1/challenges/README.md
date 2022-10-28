@@ -12,7 +12,7 @@ onto the programming challenge. You must complete both before going
 To get the exercises onto your machine, you'll need to fork and then clone this
 repo.
 
-<!-- OMITTED -->
+If you're not sure how to do that, watch [this short video](<!-- OMITTED -->).
 
 ### Installing Dependencies
 
@@ -25,8 +25,8 @@ has a few.
 We're going to use `pipenv`. Here's how to install it:
 
 ```shell
-; python3 -m ensurepip --upgrade
-; pip3 install --user pipenv
+; pip install --user pipenv
+# When this is done, you should see "Successfully installed ..." near the end.
 ; echo 'export PATH="$PATH:$(python3 -m site --user-base)/bin" # Add Pipenv to PATH' >> ~/.zshrc
 ; source ~/.zshrc
 ; pipenv --version
@@ -50,7 +50,7 @@ directory.
 Here's how to start:
 
 ```shell
-; cd path/to/python_foundations
+; cd path/to/python_fundamentals
 ; cd chapter1/challenges/drills
 
 # This will install the dependencies (pytest)

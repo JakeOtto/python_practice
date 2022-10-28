@@ -56,7 +56,7 @@ Let's look at this step by step:
 On the next line is where we write the function body, indicated by the
 indentation.
 
-Right now the `greet()` function does not take any arguments. We can tell that
+Right now the `hello()` function does not take any arguments. We can tell that
 because the parentheses are empty `()`.
 
 Let's change it so we can pass in an argument to greet a specific person.
@@ -81,7 +81,7 @@ that will hold whatever name we provide when executing the function.
 If we do this...
 
 ``` python
->>> greet("Mina")
+>>> hello("Mina")
 'Hello, Mina!'
 ```
 
@@ -90,7 +90,7 @@ If we do this...
 If we do this...
 
 ```Python
->>> greet("Bakary")
+>>> hello("Bakary")
 'Hello, Bakary!'
 ```
 
@@ -99,7 +99,7 @@ If we do this...
 If we do this...
 
 ```Python
->>> greet("Rabiah")
+>>> hello("Rabiah")
 'Hello, Rabiah!'
 ```
 
@@ -114,10 +114,10 @@ in the parentheses separated by commas.
 For example:
 
 ```python
->>> def greet_everyone(name1, name2, name3):
+>>> def hello_everyone(name1, name2, name3):
 ...     return f"Hello {name1}, {name2} and {name3}!"
 ...
->>> greet_everyone("Mina", "Bakary", "Rabiah")
+>>> hello_everyone("Mina", "Bakary", "Rabiah")
 'Hello Mina, Bakary and Rabiah!'
 ```
 
