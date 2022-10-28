@@ -68,7 +68,7 @@ Notice the difference between regular function calls `some_function(argument)` a
 
 Set a timer for 10 minutes.
 
-Your challenge is to copy the following code out into a new Python file, load the file into a Python REPL with `> load 'bakery.rb'` and build out your bakery with instantiation, and taste as many cakes as you can!
+Your challenge is to copy the following code out into a new Python file, load the file into a Python REPL with `> load 'bakery.py'` and build out your bakery with instantiation, and taste as many cakes as you can!
 
 Don't fill up on too much of one cake, or your bakery isn't going to make it!
 
