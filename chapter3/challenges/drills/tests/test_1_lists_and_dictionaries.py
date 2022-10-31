@@ -98,7 +98,7 @@ class TestDictionaries():
             {'chips': 2.5, 'burger': 10, 'slaw': 2.0, 'salad': 3.0, 'onion rings': 3.0}
         )
 
-    def remove_key_value_pair(self):
+    def test_remove_key_value_pair(self):
         assert remove_key_value_pair(
             {'chips': 2.5, 'burger': 10, 'slaw': 2.0, 'salad': 3.0}, 'slaw'
         ) == (
