@@ -100,7 +100,7 @@ ends before the _stop-index_.
 * How would you slice out `fox`?
 
 <details>
-  <summary>Reveal the answer</summary>
+  <summary>Reveal an answer</summary>
 
   ```python
   >>> phrase[6:9]

@@ -39,7 +39,7 @@ Let's start with something simple. Do this in a Python REPL:
 
 ``` python
 >>> def greet():
-...    return "Hello!"
+...     return "Hello!"
 ...
 >>> greet()
 'Hello!'

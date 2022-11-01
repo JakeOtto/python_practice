@@ -25,8 +25,7 @@ Please take 15 minutes to review them now. Use the following questions to guide 
 7. How do use `list comprehension` on a List?
 8. How do use `dictionary comprehension` on a Dictionary?
 
-Done before the end of the two weeks? If so, ask your coach for further
-guidance.
+Done before the end of the two weeks? If so, proceed onto the [Extension Challenges](../README.md#Extension-Challenges)!
 
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->

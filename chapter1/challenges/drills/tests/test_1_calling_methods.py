@@ -1,7 +1,7 @@
 from lib._1_calling_methods import *
 
 
-def test_caps_a_string():
+def test_block_caps_a_string():
     assert block_caps_a_string("hello") == "HELLO"
 
 
@@ -74,7 +74,7 @@ def test_float_is_positive():
     assert float_is_positive(-567.2) == False
 
 
-def test_float_is_negetive():
+def test_float_is_negative():
     assert float_is_negative(-1.1) == True
     assert float_is_negative(98765) == False
 

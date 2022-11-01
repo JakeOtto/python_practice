@@ -186,7 +186,7 @@ def add_ten(number):
 #   return the whole string
 # Example:
 #   Call:    truncate_string("This is a long string")
-#   Returns: "This is a..."
+#   Returns: "This is a ..."
 #   Call:    truncate_string("Short")
 #   Returns: "Short"
 

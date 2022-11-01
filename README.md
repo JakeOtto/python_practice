@@ -60,6 +60,12 @@ Work through these chapters one at a time.
 2. [Password Manager](./chapter2/README.md)
 3. [Password Manager 2.0](./chapter3/README.md)
 
+## Extension Challenges
+
+If you want to stretch yourself, there are some extra extended challenges 
+available to help reinforce your learning:
+
+* [Loading and saving files](./extension_challenges/01_files/README.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 

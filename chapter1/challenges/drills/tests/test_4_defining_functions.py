@@ -40,7 +40,7 @@ def test_add_number_strings():
     assert add_number_strings("4", "5") == 9
 
 
-def test_mulitply_number_strings():
+def test_multiply_number_strings():
     assert multiply_number_strings("4", "5") == 20
 
 

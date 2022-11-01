@@ -173,7 +173,7 @@ Variables can be _reassigned_ to contain different values, such as a different
 <!-- OMITTED -->
 
 It's also possible to build strings using _interpolation_. This technique allows
-you to insert content into strings. Here's an example where the contents of a
+you to insert content into strings. Here's an example where the content of a
 variable called `name` is interpolated into a string:
 
 ```python

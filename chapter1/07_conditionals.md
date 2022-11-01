@@ -138,7 +138,7 @@ If we wanted to print a message in the other case, we could do this:
 ...     print("That is a very long name")
 ...     print("Thanks!")
 ...
-... if len(name) <= 25:
+>>> if len(name) <= 25:
 ...     print("That is not a very long name")
 ...
 That is not a very long name
@@ -184,9 +184,9 @@ four spaces.
 
 ```python
 >>> if len("hello") > 2:
-...    # this code executes
+...     # this code executes
 ... else:
-...    # this code does not execute
+...     # this code does not execute
 ```
 
 This is because Python is _whitespace dependant_. This means that indentation
@@ -330,8 +330,8 @@ In a few sentences, explain:
 * What is meant by conditional
 * How the `if` and `elif` branches of an if statement work
 * How the `else` branch of an if statement works
-* What each of these comparison operators do: `==`, `!=`, `>`, `>=`, `<`, `<=`,
-  `%`
+* What each of these comparison operators do: `==`, `!=`, `>`, `>=`, `<`, `<=`
+* What this operator does: `%`
 
 
 [Next Challenge](08_control_flow.md)

@@ -100,7 +100,7 @@ friend.
 
 * How much of each error message was actually useful to you?
 * What is your natural reaction to seeing an error message?
-* How might a confident profession engineer react to an error message?
+* How might a confident professional engineer react to an error message?
 
 
 [Next Challenge](03_functions.md)

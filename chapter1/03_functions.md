@@ -11,9 +11,9 @@ to being able to build the first challenge of this module, a password validator.
 In this section, you'll learn to:
 
 * Explain what a function is
-* Explain what a functions's arguments are
+* Explain what a function's arguments are
 * Explain why functions are useful
-* Find more information about Python's built in functions
+* Find more information about Python's built-in functions
 
 ## Part One: What are Functions?
 
@@ -131,7 +131,7 @@ In a few sentences, explain:
 * What arguments are
 * How to use a function
 * Why functions are useful
-* Where to learn about Python's built in functions
+* Where to learn about Python's built-in functions
 
 
 [Next Challenge](04_methods.md)

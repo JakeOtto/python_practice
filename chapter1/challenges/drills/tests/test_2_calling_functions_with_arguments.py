@@ -1,11 +1,11 @@
 from lib._2_calling_functions_with_arguments import *
 
-def test_starts_with_letter():
+def test_starts_with_letter_a():
     assert starts_with_the_letter_a("Apple") == True
     assert starts_with_the_letter_a("JavaScript") == False
 
 
-def test_ends_with_letter():
+def test_ends_with_letter_a():
     assert ends_with_the_letter_a("Java") == True
     assert ends_with_the_letter_a("JAVA") == True
     assert ends_with_the_letter_a("Server") == False

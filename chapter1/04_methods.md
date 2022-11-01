@@ -1,7 +1,7 @@
 # Methods
 
 In the previous section, you learned that Python comes with a range of useful
-built in functions. In this section, you'll learn about methods.
+built-in functions. In this section, you'll learn about methods.
 
 Methods are functions that are closely tied to a particular piece of data.
 
@@ -13,7 +13,7 @@ In this section, you will learn to:
 
 * Explain what a method is
 * Explain the difference between a method and a function
-* Use methods to operate on pieces of data.
+* Use methods to operate on pieces of data
 * Find more information about Python methods
 
 ## Part One: What is a Method?
@@ -55,7 +55,7 @@ As you can see, the original string is not changed by `lower`:
 
 * Does `upper` change the original string or does it work like `lower`?
 
-* What happens when call `upper()` without it's parenthesis?
+* What happens when you call `upper()` without its parenthesis?
 ``` python
 >>> 'welcome to python'.upper
 >>> # ???
@@ -156,11 +156,11 @@ have noted down all of the answers, run them in IRB to find out.
 
   **Example 2:** `5.lower()` throws an error because `lower` is a string method and cannot be used on an integer.
   
-  **Example 3:** `"heLLo ".lower().strip()` returns "hello" because `"heLLo ".lower()` returns the String `"hello "` on which we then call `strip` to remove spaces at the start and end.
+  **Example 3:** `"heLLo ".lower().strip()` returns `"hello"` because `"heLLo ".lower()` returns the String `"hello "` on which we then call `strip` to remove spaces at the start and end.
 
-  **Example 4:** `len("hello").upper()` throws an error because `len("hello")` returns 5 on which we then call `upper`, a method that can only be called on strings.</div>
+  **Example 4:** `len("hello").upper()` throws an error because `len("hello")` returns `5` on which we then call `upper`, a method that can only be called on strings.</div>
   
-  **Example 5:** `str(len(" hello ")).strip()` returns `7` because we call the function `len` on `" hello "` making `7`. We then convert this to a string using `str` and finally call `strip` on that string (which doesn't change the string `'7'` because it has no spaces on the beginning or end).
+  **Example 5:** `str(len(" hello ")).strip()` returns `"7"` because we call the function `len` on `" hello "` making `7`. We then convert this to a string using `str` and finally call `strip` on that string (which doesn't change the string `"7"` because it has no spaces on the beginning or end).
 
   <hr>
 </details>
@@ -185,7 +185,7 @@ Python docs page for one of those now.
 
 ## Reflect and Review
 
-In this section, you learned about String methods and method chaining.
+In this section, you learned about string methods and method chaining.
 
 **Please pause at this point to reflect and review your learning...**
 
