@@ -66,6 +66,7 @@ If you want to stretch yourself, there are some extra extended challenges
 available to help reinforce your learning:
 
 * [Loading and saving files](./extension_challenges/01_files/README.md)
+* [Parsing JSON content](./extension_challenges/02_json/README.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
