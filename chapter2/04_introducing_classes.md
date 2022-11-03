@@ -225,6 +225,25 @@ not sure what classes to create try these:
 - `SuperHero`
 - `SuperVillain`
 
+## Putting it All Together
+
+Classes can have multiple methods, including the `__init__()` method. Instance
+variables can be assigned when the class instance is created then used by the
+other class methods. Here's an example that brings those things together.
+
+```Python
+>>> class Greeter():
+...     def __init__(self, name):
+...         self.name = name
+...
+...     def hello(self):
+...         return f"Hello, {self.name}"
+...
+>>> greeter = Greeter("Alan")
+>>> greeter.hello()
+'Hello, Alan'
+```
+
 ## Time to Break Things
 
 Now try this...
