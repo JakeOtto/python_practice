@@ -49,6 +49,7 @@ Here are some techniques:
 
 * Print out a variable or a "hello we reached this point in the code!" string
   * Ruby: `p`
+  * Python: `print`
   * JavaScript: `console.log`
 
 * Read the error description and stack trace.
@@ -59,10 +60,14 @@ Here are some techniques:
 
 * Pause and step through your code, line by line:
   * Ruby: `binding.irb`
+  * Python: The VS Code debugger (see [Debugging 2 in Golden
+    Square](https://github.com/makersacademy/golden-square-in-python/blob/main/challenges/07_intermezzo_debugging_2.md))
+    or, for the advanced user [`pdb`](https://docs.python.org/3/library/pdb.html)
   * JavaScript: `debugger` (JavaScript)
 
 * Write yourself small, self-contained examples of language features or methods you're trying to understand:
   * Ruby: `irb`.
+  * Python: `python`
   * JavaScript: the Chrome developer tools console, or `node`.
 
 For further tips, see our blog post by Sam Morgan [How I solve hard problems](https://blog.makersacademy.com/how-i-solve-problems-a6a84d167598)
@@ -74,13 +79,13 @@ fixed the problem then you'll need to run the steps again - at least you have ru
 
 ## Further tips
 
-* It doesn't matter what debugging tools you are using, but you should *always* be using
-some sort of tool - if you're using nothing you're going to have a really hard
-time conducting your experiments and fixing the bug.
-* When trying to understand your code, run lots of little experiments (often this is simply putting a
-  load of `puts` statements in your code), generally the sign of an
-  experienced debugger is someone who uses a large number of tests like this to
-analyse/experiment on the problem
+* It doesn't matter what debugging tools you are using, but you should *always*
+  be using some sort of tool - if you're using nothing you're going to have a
+  really hard time conducting your experiments and fixing the bug.
+* When trying to understand your code, run lots of little experiments (often
+  this is simply putting a load of print statements in your code), generally the
+  sign of an experienced debugger is someone who uses a large number of tests
+  like this to analyse/experiment on the problem
 * Keep things simple, changing too much at once is likely to introduce further
   bugs
 * Make sure you're checking the against the actual data your system is receiving
