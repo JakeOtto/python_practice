@@ -22,6 +22,31 @@ To get this one started, it should be as simple as:
 ; pipenv run pytest -x # To just run up until the first error
 ```
 
+<details>
+  <summary>:confused: I see an error about `python_full_version`?</summary>
+
+  <!-- OMITTED -->
+
+  ---
+
+  Your `pipenv` may be outdated and subject to a bug with newer `Pipfile`s.
+
+  ```shell
+  ; pipenv --version
+  2022.9.24 # If you see something in September 2022, try this
+  ; pip3 install "pipenv>=2022.11.5" -U
+  # pip3 will update pipenv for you
+
+  # Then try running `pipenv install` again
+  ; pipenv install
+  ```
+
+  If that works, great! If not, contact your coach.
+
+  ---
+</details>
+
+
 After you're done with the drills, you can repeat the above with the `program`
 directory.
 
