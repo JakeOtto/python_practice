@@ -169,6 +169,8 @@ In a few sentences, explain:
 * How to slice several characters from a string
 
 
+[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=05_further_string_manipulation.md&repository=makersacademy%2Fpython_foundations&redirect=chapter1%2F06_beyond_strings.md)
+
 [Next Challenge](06_beyond_strings.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->

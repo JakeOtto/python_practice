@@ -16,6 +16,8 @@ example, if we want to validate that a password is unique, we'll have to compare
 it with all the other currently stored passwords.
 
 
+[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=01_planning.md&repository=makersacademy%2Fpython_foundations&redirect=chapter3%2F02_choosing_a_data_structure_i.md)
+
 [Next Challenge](02_choosing_a_data_structure_i.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->

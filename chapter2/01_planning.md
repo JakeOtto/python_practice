@@ -49,6 +49,8 @@ any and all tasks.
   of short methods.
 
 
+[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=01_planning.md&repository=makersacademy%2Fpython_foundations&redirect=chapter2%2F02_introducing_lists.md)
+
 [Next Challenge](02_introducing_lists.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->

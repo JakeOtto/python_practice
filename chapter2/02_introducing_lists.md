@@ -216,6 +216,8 @@ In a few sentences, explain:
 * How to access items in a list
 
 
+[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=02_introducing_lists.md&repository=makersacademy%2Fpython_foundations&redirect=chapter2%2F03_introducing_dictionaries.md)
+
 [Next Challenge](03_introducing_dictionaries.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->

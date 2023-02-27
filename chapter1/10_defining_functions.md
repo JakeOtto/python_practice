@@ -282,6 +282,8 @@ In a few sentences, describe:
 * The syntax and structure of a function
 
 
+[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=10_defining_functions.md&repository=makersacademy%2Fpython_foundations&redirect=chapter1%2F11_putting_chapter_1_into_practice.md)
+
 [Next Challenge](11_putting_chapter_1_into_practice.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->

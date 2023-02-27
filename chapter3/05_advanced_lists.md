@@ -451,6 +451,8 @@ Make some notes, or talk to a peer, about:
 - What scope is
 
 
+[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=05_advanced_lists.md&repository=makersacademy%2Fpython_foundations&redirect=chapter3%2F06_advanced_dictionaries.md)
+
 [Next Challenge](06_advanced_dictionaries.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->

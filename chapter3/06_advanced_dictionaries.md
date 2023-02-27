@@ -192,6 +192,8 @@ Write some short notes, or talk to a peer, about:
 * What is more "pythonic", advanced methods or simple loops?
 
 
+[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=06_advanced_dictionaries.md&repository=makersacademy%2Fpython_foundations&redirect=chapter3%2F07_putting_chapter_3_into_practice.md)
+
 [Next Challenge](07_putting_chapter_3_into_practice.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->

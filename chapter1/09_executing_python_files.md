@@ -140,6 +140,8 @@ In a few sentences, explain:
 * The pros and cons of this new approach to code execution
 
 
+[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=09_executing_python_files.md&repository=makersacademy%2Fpython_foundations&redirect=chapter1%2F10_defining_functions.md)
+
 [Next Challenge](10_defining_functions.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->

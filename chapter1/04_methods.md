@@ -197,6 +197,8 @@ In a few sentences, explain:
 * Where to learn about Python's string methods
 
 
+[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=04_methods.md&repository=makersacademy%2Fpython_foundations&redirect=chapter1%2F05_further_string_manipulation.md)
+
 [Next Challenge](05_further_string_manipulation.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->

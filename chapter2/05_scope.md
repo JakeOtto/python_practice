@@ -81,6 +81,8 @@ In a few sentences, explain, in writing or to a peer:
 - What is the scope of an instance variable?
 
 
+[Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=05_scope.md&repository=makersacademy%2Fpython_foundations&redirect=chapter2%2F06_putting_chapter_2_into_practice.md)
+
 [Next Challenge](06_putting_chapter_2_into_practice.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
