@@ -69,7 +69,61 @@ Here's how to start:
 <details>
   <summary>:confused: I see an error about `python_full_version`?</summary>
 
-  <!-- OMITTED -->
+  ---
+
+  Your `pipenv` may be outdated and subject to a bug with newer `Pipfile`s.
+
+  ```shell
+  ; pipenv --version
+  2022.9.24 # If you see something in September 2022, try this
+  ; pip3 install "pipenv>=2022.11.5" -U
+  # pip3 will update pipenv for you
+
+  # Then try running `pipenv install` again
+  ; pipenv install
+  ```
+
+  If that works, great! If not, contact your coach.
+
+  ---
+</details>
+
+**Important note:** until now you have used the command `python3` to run your
+code. You should not do this when using a `pipenv` environment because it will
+not pick up your dependencies.
+
+Get into the habit now of running this whenever using `pipenv`:
+
+```shell
+; pipenv run python my_file.py
+```
+
+You will probably forget and sometimes this will cause errors. That's OK, just
+treat it as a reminder.
+
+## Drills
+
+Drills are short, tightly focused exercises which get harder as you progress.
+Leave alone any files with `test` at the start of them.
+
+Open `drills/lib/_1_calling_methods.py` in VS Code to begin! Remember to run
+`pipenv run pytest -x` often when you're in the `drills` folder! 
+
+You will notice an `IMPORT ERROR` if you try and run `pipenv run pytest -x` in
+the wrong directory.
+
+### Getting Started
+
+1. Find the first set of drills
+    * For chapter 1, that's `drills/lib/_1_calling_methods.py`
+    * You'll find further instructions there
+2. Work on the first challenge
+3. Run `pipenv run pytest -x` to check your answer
+4. Keep going until all the tests for that set of drills are passing
+5. Move on to the next set
+6. Keep going until all the tests for all the sets are passing
+7. :warning: [Zip up](../../pills/creating_zipfiles.md) your code so that you're
+   ready to share it later
 8. Move on to the programming challenge
 
 ## Programming Challenge
