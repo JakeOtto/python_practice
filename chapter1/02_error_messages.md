@@ -105,8 +105,6 @@ friend.
 
 [Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=02_error_messages.md&repository=makersacademy%2Fpython_foundations&redirect=chapter1%2F03_functions.md)
 
-[Next Challenge](03_functions.md)
-
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
 ---

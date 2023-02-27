@@ -135,8 +135,6 @@ In a few sentences, explain:
 
 [Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=12_refactoring.md&repository=makersacademy%2Fpython_foundations&redirect=chapter1%2F13_review_learning.md)
 
-[Next Challenge](13_review_learning.md)
-
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
 ---

@@ -336,8 +336,6 @@ In a few sentences, explain:
 
 [Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=07_conditionals.md&repository=makersacademy%2Fpython_foundations&redirect=chapter1%2F08_control_flow.md)
 
-[Next Challenge](08_control_flow.md)
-
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
 ---

@@ -271,8 +271,6 @@ that we will dig deeper in later sections.
 
 [Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=01_say_hello_to_python.md&repository=makersacademy%2Fpython_foundations&redirect=chapter1%2F02_error_messages.md)
 
-[Next Challenge](02_error_messages.md)
-
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
 ---

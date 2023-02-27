@@ -17,8 +17,6 @@ Well done for completing the Chapter 3 challenges!
 
 [Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=07_putting_chapter_3_into_practice.md&repository=makersacademy%2Fpython_foundations&redirect=chapter3%2F08_chapter_3_review.md)
 
-[Next Challenge](08_chapter_3_review.md)
-
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
 ---

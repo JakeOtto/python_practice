@@ -136,8 +136,6 @@ In a few sentences, explain:
 
 [Log your progress and go to the next challenge](https://makers-event-logger.herokuapp.com/?event=03_functions.md&repository=makersacademy%2Fpython_foundations&redirect=chapter1%2F04_methods.md)
 
-[Next Challenge](04_methods.md)
-
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
 ---
