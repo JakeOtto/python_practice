@@ -41,7 +41,7 @@
 # And a new rule: passwords must be unique (not reused in other services).
 #
 # Example usage:
-#   > password_manager = PasswordManager()
+#   > password_manager = PasswordManager2()
 #   > password_manager.add('gmail', '12ab5!678')   # Valid password
 #   > password_manager.add('facebook', '$abc1234') # Valid password
 #   > password_manager.add('youtube', '3@245256')  # Valid password
