@@ -6,10 +6,10 @@ def test_block_caps_a_string():
 
 
 def test_lower_case_a_string():
-    assert lower_case_a_string('HELLO WORLD') == 'hello world'
+    assert lower_case_a_string('HELLO') == 'hello'
 
 
-def test_length_of_string():
+def test_length_of_a_string():
     assert length_of_a_string('the length of this string is 31') == 31
 
 
@@ -17,17 +17,17 @@ def test_reverse_a_string():
     assert reverse_a_string("sdrawkcab") == 'backwards'
 
 
-def test_swap_case_string():
-    assert swap_the_case_of_a_string('Hello World') == 'hELLO wORLD'
+def test_swap_the_case_of_a_string():
+    assert swap_the_case_of_a_string('hELLO wORLD') == 'Hello World'
 
 
 def test_is_integer_odd():
-    assert is_integer_odd(1) == True
-    assert is_integer_odd(2) == False, "Integer is not odd"
+    assert is_integer_odd(3) == True
+    assert is_integer_odd(4) == False, "Integer is not odd"
 
 
 def test_is_integer_even():
-    assert is_integer_even(2) == True
+    assert is_integer_even(6) == True
     assert is_integer_even(7) == False, "Integer is not even"
 
 
@@ -57,7 +57,7 @@ def test_round_up():
 
 
 def test_round_down():
-    assert round_down(18.8) == 18
+    assert round_down(18.1) == 18
     assert round_down(999.99) == 999
 
 

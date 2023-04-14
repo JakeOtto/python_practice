@@ -69,7 +69,7 @@
 
 
 # Method name: reverse_each_element
-# Purpose: reverses each sting in the given list
+# Purpose: reverses each string in the given list
 # Arguments: one list
 # Example:
 #   Call:    reverse_each_element(['one', 'two'])
@@ -114,7 +114,7 @@
 
 
 # Method name: words_shorter_than
-# Purpose: returns only the elements than have fewer characters than the number provided
+# Purpose: returns only the elements that have fewer characters than the number provided
 # Arguments: one list and one number
 # Example:
 #   Call:    words_shorter_than(['banana', 'apple', 'orange', 'nut', 'avocado'], 6)
@@ -123,7 +123,7 @@
 
 
 # Method name: all_above
-# Purpose: returns true if all elements are greater than the number provided
+# Purpose: returns True if all elements are greater than the number provided
 # Arguments: one list and one number
 # Example:
 #   Call:    all_above([9, 3, 6, 44, 1, 7, 7], 6)
@@ -134,7 +134,7 @@
 
 
 # Method name: all_below
-# Purpose: returns true if all elements are less than the number provided
+# Purpose: returns True if all elements are less than the number provided
 # Arguments: one list and one number
 # Example:
 #   Call:    all_below([9, 3, 6, 44, 1, 7, 7], 6)
@@ -165,7 +165,7 @@
 
 
 # Method name: add_key_value_pair
-# Purpose: returns a the dictionary with the new key and value added
+# Purpose: returns the dictionary with the new key and value added
 # Arguments: one dictionary, one key and one value
 # Example:
 #   Call:    add_key_value_pair({'cat': 4, 'person': 2, 'centipede': 100}, 'dog', 4)
@@ -174,8 +174,8 @@
 
 
 # Method name: remove_key_value_pair
-# Purpose: returns a the dictionary with the key and value removed
-# Arguments: one dictionary, one key
+# Purpose: returns the dictionary with the key and value removed
+# Arguments: one dictionary and one key
 # Example:
 #   Call:    remove_key_value_pair({'cat': 4, 'person': 2, 'centipede': 100}, 'cat')
 #   Returns: {'person': 2, 'centipede': 100}

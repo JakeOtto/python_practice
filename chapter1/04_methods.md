@@ -126,7 +126,7 @@ For Python, first it runs `greeting.strip()` to get `"hello"`, then runs
 ### Exercise
 
 Here are some lines of code. Note down what you think each one will do. When you
-have noted down all of the answers, run them in IRB to find out.
+have noted down all of the answers, run them in the Python REPL to find out.
 
 ```python
 # Don't run these until you've said what you think will happen

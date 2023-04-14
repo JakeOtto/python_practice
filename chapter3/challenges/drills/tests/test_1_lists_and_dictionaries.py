@@ -49,7 +49,7 @@ class TestArrays():
         assert greater_than_5(
             [9, 3, 44, 7]) == [9, 44, 7]
 
-    def test_greater_than_x(self):
+    def test_greater_than(self):
         assert greater_than(
             [1, 2, 3, 4, 5], 3) == [4, 5]
         assert greater_than(
@@ -67,13 +67,13 @@ class TestArrays():
 
     def test_all_above(self):
         assert all_above([2, 3, 4, 5], 1) == True
-        assert all_above([2, 3, 4, 5], 5) == False
+        assert all_above([2, 3, 4, 5], 2) == False
 
     def test_all_below(self):
         assert all_below([2, 3, 4, 5], 6) == True
         assert all_below([2, 3, 4, 5], 5) == False
 
-    def test_multiply_by_each(self):
+    def test_multiply_each_by(self):
         assert multiply_each_by(
             [1, 2, 3, 4, 5], 2) == [2, 4, 6, 8, 10]
         assert multiply_each_by(

@@ -40,4 +40,5 @@ class TestPasswordManager():
         assert list(subject.list_services()) == ['service_2']
         assert subject.get_for_service('service_2') == '1234567!'
         subject.add('service_3', '12345678')
+        subject.add('service_4', '!@$%&')
         assert list(subject.list_services()) == ['service_2']

@@ -19,10 +19,8 @@
 #
 # A reminder of the validity rules:
 #   1. A password must be at least 8 characters long
-#   2. A password must contain at least one of each of the following:
-#       - It must be longer than 7 characters (8 is fine)
-#       - It must contain at least one of the following special characters:
-#         `!`, `@`, `$`, `%` or `&`
+#   2. A password must contain at least one of the following special characters:
+#      `!`, `@`, `$`, `%` or `&`
 #
 # We recommend that you store the passwords in a dictionary, where the keys are
 # the service names and the values are the passwords.

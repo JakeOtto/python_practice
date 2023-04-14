@@ -10,7 +10,7 @@ def test_say_goodbye():
 
 
 def test_say_hello_to():
-    assert say_hello_to("Sam") == "Hello, Sam!"
+    assert say_hello_to("Amy") == "Hello, Amy!"
 
 
 def test_say_goodbye_to():
@@ -21,6 +21,7 @@ def test_square():
     assert square(5) == 25
     assert square(3) == 9
     assert square(8) == 64
+    assert square(0) == 0
 
 
 def test_divisible_by_three():
@@ -48,16 +49,19 @@ def test_both_odd():
     assert both_odd(1, 3) == True
     assert both_odd(1, 2) == False
     assert both_odd(4, 7) == False
+    assert both_odd(4, 8) == False
 
 
 def test_both_even():
     assert both_even(2, 8) == True
     assert both_even(1, 2) == False
     assert both_even(4, 7) == False
+    assert both_even(1, 7) == False
 
 
 def test_one_odd():
     assert one_odd(3, 6) == True
+    assert one_odd(6, 3) == True
     assert one_odd(8, 6) == False
     assert one_odd(3, 9) == True
 
@@ -66,6 +70,7 @@ def test_one_even():
     assert one_even(3, 6) == True
     assert one_even(7, 7) == False
     assert one_even(4, 9) == True
+    assert one_even(4, 6) == True
 
 
 def test_truncate_string_longer_than_10_chars():

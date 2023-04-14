@@ -22,7 +22,7 @@ class TestGreeter():
 
 class TestBasket():
 
-    def test_add(self):
+    def test_add_items_then_list(self):
         subject = Basket()
         subject.add('eggs')
         subject.add('milk')
@@ -40,7 +40,7 @@ class TestCalculator():
         subject = Calculator()
         assert subject.multiply(2, 17) == 34
 
-    def test_subract(self):
+    def test_subtract(self):
         subject = Calculator()
         assert subject.subtract(2, 17) == -15
 
@@ -48,7 +48,7 @@ class TestCalculator():
         subject = Calculator()
         assert subject.divide(30, 3) == 10
 
-    def test_history(self):
+    def test_list_history(self):
         subject = Calculator()
         subject.add(1, 2)
         subject.multiply(3, 4)
@@ -59,7 +59,7 @@ class TestCalculator():
 
 class TestCohort():
 
-    def test_add_student(self):
+    def test_add_students_then_list(self):
         subject = Cohort()
         subject.add_student(
             {'name': 'Gene', 'employer': 'Atlantis Digital'})
@@ -74,7 +74,7 @@ class TestCohort():
             {'name': 'Jaspal', 'employer': 'Mercia Digital'}
         ])
 
-    def test_employed_by(self):
+    def test_list_employed_by(self):
         subject = Cohort()
         subject.add_student(
             {'name': 'Gene', 'employer': 'Atlantis Digital'})
@@ -91,7 +91,7 @@ class TestCohort():
 
 class TestPerson():
 
-    def test_work_address(self):
+    def test_get_work_address(self):
         subject = Person({
             'name': 'Jo',
             'pets': [
@@ -106,7 +106,7 @@ class TestPerson():
         })
         assert subject.get_work_address() == '12 Whitehall'
 
-    def test_home_address(self):
+    def test_get_home_address(self):
         subject = Person({
             'name': 'Jo',
             'pets': [
@@ -121,7 +121,7 @@ class TestPerson():
         })
         assert subject.get_home_address() == '1 North Lane'
 
-    def test_pets(self):
+    def test_get_pets(self):
         subject = Person({
             'name': 'Jo',
             'pets': [

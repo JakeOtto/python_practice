@@ -58,8 +58,8 @@ def deduct_10_if_possible(number):
 #   Returns: 100
 #   Call:    top_up_to_100(100)
 #   Returns: 100
-#   Call:    top_up_to_100(101)
-#   Returns: 101
+#   Call:    top_up_to_100(125)
+#   Returns: 125
 def top_up_to_100(number):
     # your code goes here (delete the pass below)
     pass

@@ -2,7 +2,7 @@
 #
 # In these exercises you will build small classes.
 #
-# The first ones will be familiar, do them without looking at oyur previous
+# The first ones will be familiar, do them without looking at your previous
 # work. The later ones will be more complex.
 #
 # Here is an example of some exercise instructions and a solution.
@@ -19,13 +19,20 @@
 #      Arguments: none
 #      Returns: a string like 'Goodbye, NAME!'
 # Example usage:
-#   > greeter = Greeter('Bobby')
-#   > greeter.say_hello
+#   > greeter = ExampleGreeter('Bobby')
+#   > greeter.say_hello()
 #   'Hello, Bobby!'
-#   > greeter.say_goodbye
+#   > greeter.say_goodbye()
 #   'Goodbye, Bobby!'
 #
-# Example solution follows.
+# Example solution:
+# class ExampleGreeter():
+#     def __init__(self, name):
+#         self.name = name
+#     def say_hello(self):
+#         return 'Hello, ' + self.name + '!'
+#     def say_goodbye(self):
+#         return 'Goodbye, ' + self.name + '!'
 
 
 
@@ -34,18 +41,16 @@
 # Class name: Greeter
 # Purpose: say various greetings to a user with a given name
 # Methods:
-#   1. Name: __init__
-#      Arguments: none
-#   2. Name: hello
+#   1. Name: hello
 #      Arguments: one, a string representing a name
 #      Returns: a string like 'Hello, NAME!'
-#   3. Name: goodbye
+#   2. Name: goodbye
 #      Arguments: one, a string representing a name
 #      Returns: a string like 'Goodbye, NAME!'
-#   4. Name: good_night
+#   3. Name: good_night
 #      Arguments: one, a string representing a name
 #      Returns: a string like 'Good night, NAME!'
-#   5. Name: good_morning
+#   4. Name: good_morning
 #      Arguments: one, a string representing a name
 #      Returns: a string like 'Good morning, NAME!'
 # Example usage:
@@ -159,11 +164,11 @@
 #      Returns: a nice summary of the person's pets
 # Example usage:
 #   > person = Person({
-#       'name' : 'alex',
+#       'name' : 'Alex',
 #       'pets' : [
-#         {'name' : 'arthur', 'animal' : 'cat'},
-#         {'name' : 'judith', 'animal' : 'dog'},
-#         {'name' : 'gwen', 'animal' : 'goldfish'}
+#         {'name' : 'Arthur', 'animal' : 'cat'},
+#         {'name' : 'Judith', 'animal' : 'dog'},
+#         {'name' : 'Gwen', 'animal' : 'goldfish'}
 #       ],
 #       'addresses' : [
 #         {'name' : 'work', 'building' : '50', 'street' : 'Commercial Street'},
