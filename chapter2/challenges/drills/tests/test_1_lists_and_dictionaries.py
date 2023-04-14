@@ -33,12 +33,12 @@ def test_total():
 
 def test_lowest_number():
     assert lowest_number([2, 5, 3, 1, 4]) == 1
-    assert lowest_number([22, 66, 33, 11, 44]) == 11
+    assert lowest_number([22, 66, 33, 11, 44, 11]) == 11
 
 
 def test_highest_number():
     assert highest_number([2, 5, 3, 1, 4]) == 5
-    assert highest_number([22, 66, 33, 77, 44]) == 77
+    assert highest_number([22, 66, 33, 77, 44, 77]) == 77
 
 
 def test_the_beatles():

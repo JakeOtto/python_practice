@@ -1,6 +1,6 @@
 # == INSTRUCTIONS ==
 #
-# These challenges are a bit trickier and, in some cases, will required a few
+# These challenges are a bit trickier and, in some cases, will require a few
 # lines of code. If you start to get a little stuck, take a step back and make
 # a plan by breaking the overall task down into small steps.
 

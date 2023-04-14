@@ -3,6 +3,7 @@ from datetime import date
 
 
 class TestInstances():
+
     def test_animal(self):
         new_animal = Animal()
         assert isinstance(new_animal, Animal)
@@ -13,6 +14,7 @@ class TestInstances():
 
 
 class TestAnimalsSpeak():
+
     def test_cat(self):
         azrael = Cat()
         assert azrael.speak() == 'miaow'

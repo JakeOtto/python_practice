@@ -22,9 +22,9 @@ import datetime
 #      Returns: a string like 'Goodbye, NAME!'
 # Example usage:
 #   > greeter = Greeter('Bobby')
-#   > greeter.say_hello
+#   > greeter.say_hello()
 #   'Hello, Bobby!'
-#   > greeter.say_goodbye
+#   > greeter.say_goodbye()
 #   'Goodbye, Bobby!'
 #
 # Example solution follows.
@@ -33,11 +33,11 @@ class Greeter():
     def __init__(self, name):
         self.name = name
 
-    def hello(self):
-        return 'hello, ' + self.name
+    def say_hello(self):
+        return 'Hello, ' + self.name + "!"
 
-    def goodbye(self):
-        return 'goodbye, ' + self.name
+    def say_goodbye(self):
+        return 'Goodbye, ' + self.name + "!"
 
 
 # == EXERCISES ==
@@ -191,13 +191,13 @@ class Greeter():
 #      Arguments: one string representing a name,
 #                 one string representing a start_date,
 #                 one string representing an end_date
-#   5. Name: calculate_duration
+#   2. Name: calculate_duration
 #      Arguments: none
 #      Returns: the number of days between start_date and end_date
 # Example usage:
-#   > cohort = Cohort('June 2030', '2020-06-01', '2020-09-01')
+#   > cohort = Cohort('June 2020', '2020-06-01', '2020-09-01')
 #   > cohort.name
-#   'June 2030'
+#   'June 2020'
 #   > cohort.start_date
 #   datetime.date(2020, 6, 1)
 #   > cohort.end_date
