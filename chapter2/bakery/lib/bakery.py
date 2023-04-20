@@ -29,7 +29,7 @@ class Baker():
     def check_space(self):
         print(f"You have eaten {len(self.cakes_sampled)} cakes. \n You have {self.stomach_space_remaining} percent space remaining in your belly!")
         if len(self.cakes_sampled) > 4:
-            print("You have sampled more than enough cake. Time to open the shop!")       
+            print("You have sampled more than enough cake. Time to open the shop!")
             exit()
         elif self.stomach_space_remaining < 0:
             print("You have filled up on too much cake. You pass out. The shop makes no business this day.")

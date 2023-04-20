@@ -1,6 +1,5 @@
 # Intermezzo: Instantiating Objects from Classes
 
-
 ## Introduction
 
 We have had a look at Classes, how to define them, what they're used for and how we can put them to use. 
@@ -9,7 +8,7 @@ In this intermezzo section, we are going to look a little deeper at classes, obj
 
 ## Repeatable Execution
 
-Why do we use classes in Software Development? Why do we use methods? Functions? If you've got to this stage in Ruby Foundations, you've undoubtedly had a go at making your own in the drills - but what is the point?
+Why do we use classes in Software Development? Why do we use methods? Functions? If you've got to this stage in Python Foundations, you've undoubtedly had a go at making your own in the drills - but what is the point?
 
 The entire idea of learning increasingly complex object creation, from variables to functions, to hashes, to classes; is to make our lives easier. 
 
@@ -30,7 +29,7 @@ print(variable_one)
 
 For the function we need only make the function call:
 
-``` ruby
+``` python
 def greeting(name):
     print(f"Hello there, {name}!")
 
@@ -43,7 +42,7 @@ greeting("Maggie")
 
 For the class, we should instantiate it:
 
-``` ruby
+``` python
 class Cake():
     def __init__(self):
         self.flavour = ""
@@ -68,7 +67,10 @@ Notice the difference between regular function calls `some_function(argument)` a
 
 Set a timer for 10 minutes.
 
-Your challenge is to copy the following code out into a new Python file, load the file into a Python REPL with `python3` to enter the REPL, and then `from bakery import *` on your first line in the REPL.
+Your challenge is to copy the following code out into a new Python file or use
+the one from [here](./lib/bakery.py), load the file into a Python REPL with
+`python3` to enter the REPL, and then `from bakery import *` on your first line
+in the REPL.
 
 Then build out your bakery with instantiation, and taste as many cakes as you can!
 
@@ -85,7 +87,7 @@ class Cake():
     
     def take_slice(self, slice):
         self.size -= slice
-        print(f"You have taken a {self.slice} percent sized slice. There is {self.size} percent cake remaining.")
+        print(f"You have taken a {slice} percent sized slice. \n There is {self.size} percent cake remaining.")
 
 class Baker():
     def __init__(self):
@@ -96,35 +98,35 @@ class Baker():
     
     def eat_cake(self, cake, slice):
         cake.take_slice(slice)
-        if cake in self.cakes_sampled
-            "You've tried this one already!"
-        else
+        if cake in self.cakes_sampled:
+            print("You've tried this one already!")
+        else:
             self.cakes_sampled.append(cake)
             self.stomach_space_remaining -= slice
 
 
     def check_space(self):
-        print(f"You have eaten {@cakes_sampled.length} cakes. You have {@stomach_space_remaining} percent space remaining in your belly!")
-        if len(self.cakes_sampled) > 4
-            p "You have sampled more than enough cake. Time to open the shop!"       
+        print(f"You have eaten {len(self.cakes_sampled)} cakes. \n You have {self.stomach_space_remaining} percent space remaining in your belly!")
+        if len(self.cakes_sampled) > 4:
+            print("You have sampled more than enough cake. Time to open the shop!")
             exit()
-        elsif self.stomach_space_remaining < 0
-            p "You have filled up on too much cake. You pass out. The shop makes no business this day."
+        elif self.stomach_space_remaining < 0:
+            print("You have filled up on too much cake. You pass out. The shop makes no business this day.")
             exit()
         
-        self.stomach_space_remaining
+        return self.stomach_space_remaining
 
     def cakes(self):
-        
-    end
+        for cake in self.cakes_sampled:
+            print(str(self.cakes_sampled.index(cake)+1) + ": " + cake.flavour)
 
-    def choose_favourite
-        puts "Which was your favourite cake?"
-        cakes?()
-        puts "Pick the number as it appears in the list."
-        choice = gets
-        choice = choice.to_i - 1
-        return "#{@cakes_sampled[choice].flavour} was your favourite!"
+
+    def choose_favourite(self):
+        print("Which was your favourite cake?")
+        self.cakes()
+        print("Pick the number as it appears in the list.")
+        choice = int(input("Which cake?: \n")) - 1
+        return f"{self.cakes_sampled[choice].flavour} was your favourite!"
 ```
 
 ### REPL Experimentation
@@ -151,16 +153,16 @@ This is how it might go:
     >>> will
     <bakery.Baker object at 0x100f7d750>
     >>> will.eat_cake(cake, 20)
-    You have taken a 20 percent sized slice. 
+    You have taken a 20 percent sized slice.
     There is 80 percent cake remaining.
     >>> will.check_space()
-    You have eaten 1 cakes. 
+    You have eaten 1 cakes.
     You have 80 percent space remaining in your belly!
     80
     >>> cake2 = Cake()
     >>> cake2.set_flavour("Strawberry")
     >>> will.eat_cake(cake2, 40)
-    You have taken a 40 percent sized slice. 
+    You have taken a 40 percent sized slice.
     There is 60 percent cake remaining.
     >>> will.check_space()
     You have eaten 2 cakes. 
@@ -168,16 +170,13 @@ This is how it might go:
     40
 ```
 
-
 ## Exercise 2
 
-The next exercise requires you to either copy, or clone the Bakery 2.rb file.
+The next exercise requires you to either copy, or clone the bakery_2.py file.
 
-You must load the 'bakery_2.rb' file into irb, and do your best to satisfy the orders being placed at your Cake Bakery!
+You must load the 'bakery_2.py' file into the REPL, and do your best to satisfy the orders being placed at your Cake Bakery!
 
 You can find a link to it [here](./lib/bakery_2.py).
-
-
 
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
