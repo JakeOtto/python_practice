@@ -290,7 +290,7 @@ We can get rid of the `is_too_short` function by using `filter` with a lambda
 ...       lambda password: len(password['password']) < 8,
 ...       passwords
 ...     )
-...   ) == 0
+...   ) == []
 ...
 >>> are_all_passwords_long_enough(passwords)
 False

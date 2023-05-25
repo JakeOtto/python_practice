@@ -13,7 +13,7 @@ the challenges in chapter 1.](../../chapter1/challenges/README.md)
 To get this one started, it should be as simple as:
 
 ```shell
-; cd path/to/python_fundamentals
+; cd path/to/python_foundations
 ; cd chapter2/challenges/drills
 
 ; pipenv install

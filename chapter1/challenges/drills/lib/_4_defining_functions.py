@@ -156,7 +156,7 @@ def add_ten(number):
 # Example:
 #   Call:    one_odd(5, 10)
 #   Returns: True
-#   Call:    one_odd(4, 10)
+#   Call:    one_odd(5, 11)
 #   Returns: True
 #   Call:    one_odd(4, 8)
 #   Returns: False
@@ -169,7 +169,7 @@ def add_ten(number):
 # Example:
 #   Call:    one_even(5, 10)
 #   Returns: True
-#   Call:    one_even(5, 11)
+#   Call:    one_even(4, 10)
 #   Returns: True
 #   Call:    one_even(5, 9)
 #   Returns: False

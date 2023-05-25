@@ -32,7 +32,7 @@ And so could we approach a larger problem in Software Development.
 
 This tendency to break things up into component parts will come more naturally as you move further into the course and come to utilise Test Driven Development, but for now, let's look at our problem, and dissect, or Decompose, it into more manageable chunks.
 
-## Practicing Problem Decomposition
+## Practising Problem Decomposition
 
 Getting good at problem decomposition takes practice, so let's do that now. The following two exercises are intended to train your ability to break things down into tiny, very simple, steps. Later on, you'll be given a specific approach to decomposing the type of problems that you'll encounter over the next few weeks.
 
