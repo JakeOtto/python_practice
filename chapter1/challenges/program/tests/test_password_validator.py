@@ -12,6 +12,7 @@ def test_whether_the_program_validates():
     assert is_valid("567$") == False, "returns false when the password contains less than eight characters but includes '$'"
     assert is_valid("567&") == False, "returns false when the password contains less than eight characters but includes '&'"
     assert is_valid("567%") == False, "returns false when the password contains less than eight characters but includes '%'"
+    assert is_valid("12!@$&%") == False, "returns false when the password is 7 chars but includes special characters"
 
     assert is_valid("12345678") == False, "returns false when the password does not contain any special characters"
 

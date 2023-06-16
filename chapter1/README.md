@@ -37,8 +37,7 @@ you'll learn about _refactoring_ and in section 13, you'll review your learning.
 8. [Control Flow](./08_control_flow.md)
 9. [Executing Python Files](./09_executing_python_files.md)
 10. [Defining Methods](./10_defining_functions.md)
-11. [Putting Chapter 1 Into
-    Practice](./11_putting_chapter_1_into_practice.md)
+11. [Putting Chapter 1 Into Practice](./11_putting_chapter_1_into_practice.md)
 12. [Refactoring](./12_refactoring.md)
 13. [Chapter 1 Review](./13_review_learning.md)
 
