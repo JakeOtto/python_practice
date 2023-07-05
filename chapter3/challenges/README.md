@@ -58,7 +58,7 @@ directory.
 3. [Start recording](../../pills/screen_recordings.md) 🎥
 4. Complete the program exercise
 5. [Submit your
-   work](https://airtable.com/shr6mk28x0fy3OrxN?prefill_Item=pyf_ch3)
+   work](https://airtable.com/shrvo9ePjlwnaiLv5?prefill_Item=pyf_ch3)
 6. [Reflect on your
    progress](../07_putting_chapter_3_into_practice.md#reflect-and-review)
 
