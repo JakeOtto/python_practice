@@ -52,6 +52,11 @@ class Greeter():
 #   > animal = Animal()
 #   > animal
 #   <Animal object at 0x7f8b8c0b8e80>
+class Animal():
+    def __init__():
+        pass
+        
+
 
 
 
@@ -65,6 +70,9 @@ class Greeter():
 #   > vehicle = Vehicle()
 #   > vehicle
 #   <Vehicle object at 0x7f8b8c0b8e80>
+class Vehicle():
+    def __init__(self):
+        pass
 
 
 
@@ -80,6 +88,13 @@ class Greeter():
 #   > cat = Cat()
 #   > cat.speak()
 #   'miaow'
+class Cat():
+    def __init__(self):
+        pass
+
+    def speak():
+        return "miaow"
+    
 
 
 
@@ -95,7 +110,12 @@ class Greeter():
 #   > dog = Dog()
 #   > dog.speak()
 #   'woof'
+class Dog():
+    def __init__():
+        pass
 
+    def speak():
+        return "woof"
 
 
 # Class name: StringFormatter
@@ -115,6 +135,15 @@ class Greeter():
 #   'HELLO'
 #   > string_formatter.lower_case('HELLO')
 #   'hello'
+class StringFormatter():
+    def __init__():
+        pass
+
+    def block_caps(sub_string):
+        return sub_string.upper()
+    
+    def lower_case(sub_string):
+        return sub_string.lower()
 
 
 

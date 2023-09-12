@@ -18,5 +18,22 @@
 # == YOUR CODE ==
 
 def is_valid(password):
-    pass # Your code goes here (delete the `pass`)
-
+    
+    valid = False
+    symbol = False 
+    if len(password) <= 7:
+        valid = False
+        
+    else:
+        req_char = ["!","@","$","%","&"]
+        print ("passed length")
+        for i in req_char:
+            if password.find(i) == -1:
+                valid = False
+                print ("failed search")
+            else:
+                symbol = True
+                
+    if symbol == True:
+        valid = True
+    return valid

@@ -70,3 +70,35 @@
 from datetime import datetime
 class PasswordManager2():
     pass
+
+def __init__(self):
+    self.password_dic = {}
+    
+def add(self, ser_name, ser_pass):
+    
+    valid = False
+    req_char = ["!", "@", "$", "%", "&"]
+
+    if len(ser_pass) >= 8 and any (char in ser_pass for char in req_char):
+        for key, value in self.password_dic.items():
+            if value != ser_pass:
+                valid = True
+
+    if valid:
+        self.password_dic[ser_name]=ser_pass
+
+def get_for_service(self, ser_name):
+    
+    for key, value in self.password_dic.items():
+        if key == ser_name:
+            return value
+        
+    return None
+
+def list_services(self):
+    keys_list = []
+    for key, value in self.password_dic.items():
+        if value != None:
+            keys_list.append(key)
+
+    return keys_list

@@ -20,7 +20,8 @@
 # Example:
 #   Call:    fourth_element([1, 2, 3, 4, 5])
 #   Returns: 4
-
+def fourth_element(sub_list):
+    return sub_list[3]
 
 
 # Method name: average
@@ -29,8 +30,11 @@
 # Example:
 #   Call:    average([3, 1, 44, 1])
 #   Returns: 12.25
-
-
+def average(num_list):
+    total = 0
+    for i in num_list:
+        total += i
+    return total/len(num_list)
 
 # Method name: lowest_squared
 # Purpose: returns the lowest number squared
@@ -38,6 +42,12 @@
 # Example:
 #   Call:    lowest_squared([5, 3, 44, 7])
 #   Returns: 9
+def lowest_squared(sub_list):
+    initial = sub_list[0]
+    for i in sub_list:
+        if i < initial:
+            initial = i
+    return initial**2
 
 
 
